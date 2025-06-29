@@ -1,0 +1,17 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Overview of the IR Dataset}}{18}{table.caption.8}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces System Hardware Specifications}}{23}{table.caption.9}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Hyperparameters for Transformer-Based Models}}{27}{table.caption.10}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Testing metrics results for classifying the two classes.}}{38}{table.caption.13}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Testing metrics results for classifying the 11 classes.}}{38}{table.caption.14}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Testing metrics results for classifying the 12 classes.}}{39}{table.caption.15}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Detailed testing metrics for classifying anomaly and no anomaly classes.}}{39}{table.caption.16}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Detailed testing metrics for classifying 11 classes.}}{40}{table.caption.17}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces Detailed testing metrics for classifying 12 classes.}}{41}{table.caption.18}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces Comparison of CNN and Vision Transformer with previous models for the same dataset.}}{42}{table.caption.19}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }

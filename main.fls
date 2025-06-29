@@ -54,6 +54,8 @@ INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\subfig\subfig.sty
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\subfig\subfig.sty
+INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\tools\longtable.sty
+INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\tools\longtable.sty
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
@@ -392,6 +394,8 @@ INPUT .\main.aux
 INPUT .\main.aux
 INPUT main.aux
 OUTPUT main.aux
+INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\caption\ltcaption.sty
+INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\caption\ltcaption.sty
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
