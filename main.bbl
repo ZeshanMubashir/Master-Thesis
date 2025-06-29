@@ -1,0 +1,414 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{vaswani2017attention}{article}{}{}
+      \name{author}{10}{}{%
+        {{hash=7f28e84700536646dd6620a0db07ad09}{%
+           family={Vaswani},
+           familyi={V\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod}}}%
+        {{hash=62efade83d70f0323fe248755e6c90c5}{%
+           family={Shazeer},
+           familyi={S\bibinitperiod},
+           given={Noam},
+           giveni={N\bibinitperiod}}}%
+        {{hash=06649ebab1ea5cac0250746a19764975}{%
+           family={Parmar},
+           familyi={P\bibinitperiod},
+           given={Niki},
+           giveni={N\bibinitperiod}}}%
+        {{hash=831027ee0ebf22375e2a86afc1881909}{%
+           family={Uszkoreit},
+           familyi={U\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2fd2982e30ebcec93ec1cf76e0d797fd}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Llion},
+           giveni={L\bibinitperiod}}}%
+        {{hash=27b07e4eacbf4ef7a1438e3badb7dd8d}{%
+           family={Gomez},
+           familyi={G\bibinitperiod},
+           given={Aidan\bibnamedelima N},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=f2bc899b1160163417da7bf510f15d33}{%
+           family={Kaiser},
+           familyi={K\bibinitperiod},
+           given={Lukasz},
+           giveni={L\bibinitperiod}}}%
+        {{hash=95595a0fefb86187cbc36e551017d332}{%
+           family={Polosukhin},
+           familyi={P\bibinitperiod},
+           given={Illia},
+           giveni={I\bibinitperiod}}}%
+        {{hash=02404a92b0be3f52ec5ac08e41c13445}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Samy},
+           giveni={S\bibinitperiod}}}%
+        {{hash=be6dc43fe1771d8870237ce7a47c6f7f}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Yiming},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{fullhash}{60bde7d308aa7964267ddcc268da1eb4}
+      \strng{fullhashraw}{60bde7d308aa7964267ddcc268da1eb4}
+      \strng{bibnamehash}{60bde7d308aa7964267ddcc268da1eb4}
+      \strng{authorbibnamehash}{60bde7d308aa7964267ddcc268da1eb4}
+      \strng{authornamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authorfullhash}{60bde7d308aa7964267ddcc268da1eb4}
+      \strng{authorfullhashraw}{60bde7d308aa7964267ddcc268da1eb4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in Neural Information Processing Systems (NeurIPS)}
+      \field{title}{Attention is All You Need}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1706.03762
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1706.03762
+      \endverb
+    \endentry
+    \entry{Shazeer2017}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=62efade83d70f0323fe248755e6c90c5}{%
+           family={Shazeer},
+           familyi={S\bibinitperiod},
+           given={Noam},
+           giveni={N\bibinitperiod}}}%
+        {{hash=fbd2f0ec383a2ff63d89cf287c3a4ddb}{%
+           family={Mirhoseini},
+           familyi={M\bibinitperiod},
+           given={Azalia},
+           giveni={A\bibinitperiod}}}%
+        {{hash=56dbc29234e98e45e516da1b654e12d8}{%
+           family={Maziarz},
+           familyi={M\bibinitperiod},
+           given={Krzysztof},
+           giveni={K\bibinitperiod}}}%
+        {{hash=a4c859221cc41e2db6d63b486f955ba2}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={Andy},
+           giveni={A\bibinitperiod}}}%
+        {{hash=841a83a4bb5e622d6e1bde4818879016}{%
+           family={Le},
+           familyi={L\bibinitperiod},
+           given={Quoc},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=9a8750ccdb2a4cf14d2655face1ce016}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={Geoffrey},
+           giveni={G\bibinitperiod}}}%
+        {{hash=62f954323339abeba6c6a240e9d2855b}{%
+           family={Dean},
+           familyi={D\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {International Conference on Learning Representations, ICLR}%
+      }
+      \strng{namehash}{f2263f5195ccd4c96d22a9ca9afe302e}
+      \strng{fullhash}{b0a7ca8ce484901810e2eb8711f62dbb}
+      \strng{fullhashraw}{b0a7ca8ce484901810e2eb8711f62dbb}
+      \strng{bibnamehash}{b0a7ca8ce484901810e2eb8711f62dbb}
+      \strng{authorbibnamehash}{b0a7ca8ce484901810e2eb8711f62dbb}
+      \strng{authornamehash}{f2263f5195ccd4c96d22a9ca9afe302e}
+      \strng{authorfullhash}{b0a7ca8ce484901810e2eb8711f62dbb}
+      \strng{authorfullhashraw}{b0a7ca8ce484901810e2eb8711f62dbb}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The capacity of a neural network to absorb information is limited by its number of parameters. Conditional computation, where parts of the network are active on a per-example basis, has been proposed in theory as a way of dramatically increasing model capacity without a proportional increase in computation. In practice, however, there are significant algorithmic and performance challenges. In this work, we address these challenges and finally realize the promise of conditional computation, achieving greater than 1000x improvements in model capacity with only minor losses in computational efficiency on modern GPU clusters. We introduce a Sparsely-Gated Mixture-of-Experts layer (MoE), consisting of up to thousands of feed-forward sub-networks. A trainable gating network determines a sparse combination of these experts to use for each example. We apply the MoE to the tasks of language modeling and machine translation, where model capacity is critical for absorbing the vast quantities of knowledge available in the training corpora. We present model architectures in which a MoE with up to 137 billion parameters is applied convolutionally between stacked LSTM layers. On large language modeling and machine translation benchmarks, these models achieve significantly better results than state-of-the-art at lower computational cost.}
+      \field{journaltitle}{5th International Conference on Learning Representations, ICLR 2017 - Conference Track Proceedings}
+      \field{month}{1}
+      \field{title}{Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://arxiv.org/pdf/1701.06538
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/pdf/1701.06538
+      \endverb
+    \endentry
+    \entry{ibrahim2022machine}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=43be3adae8fa23cea815254ea23b4c18}{%
+           family={Ibrahim},
+           familyi={I\bibinitperiod},
+           given={Mariam},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d82c7dad9ce3aa4943fbe4c6f7151acd}{%
+           family={Alsheikh},
+           familyi={A\bibinitperiod},
+           given={Ahmad},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3ff3cfba415ea3f30a558229631f66e1}{%
+           family={Awaysheh},
+           familyi={A\bibinitperiod},
+           given={Feras\bibnamedelima M},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=8a71ec0d7afa8872cf710529bc5ef742}{%
+           family={Alshehri},
+           familyi={A\bibinitperiod},
+           given={Mohammad\bibnamedelima Dahman},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{404cb980b2c106cd1c19537a953e814a}
+      \strng{fullhash}{49d416e3c726df9504fefc9268926267}
+      \strng{fullhashraw}{49d416e3c726df9504fefc9268926267}
+      \strng{bibnamehash}{49d416e3c726df9504fefc9268926267}
+      \strng{authorbibnamehash}{49d416e3c726df9504fefc9268926267}
+      \strng{authornamehash}{404cb980b2c106cd1c19537a953e814a}
+      \strng{authorfullhash}{49d416e3c726df9504fefc9268926267}
+      \strng{authorfullhashraw}{49d416e3c726df9504fefc9268926267}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Energies}
+      \field{number}{3}
+      \field{title}{Machine learning schemes for anomaly detection in solar power plants}
+      \field{volume}{15}
+      \field{year}{2022}
+      \field{pages}{1082}
+      \range{pages}{1}
+    \endentry
+    \entry{deline2010partially}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=06d48442ae9aeb26fe4dfa871ff311a3}{%
+           family={Deline},
+           familyi={D\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{06d48442ae9aeb26fe4dfa871ff311a3}
+      \strng{fullhash}{06d48442ae9aeb26fe4dfa871ff311a3}
+      \strng{fullhashraw}{06d48442ae9aeb26fe4dfa871ff311a3}
+      \strng{bibnamehash}{06d48442ae9aeb26fe4dfa871ff311a3}
+      \strng{authorbibnamehash}{06d48442ae9aeb26fe4dfa871ff311a3}
+      \strng{authornamehash}{06d48442ae9aeb26fe4dfa871ff311a3}
+      \strng{authorfullhash}{06d48442ae9aeb26fe4dfa871ff311a3}
+      \strng{authorfullhashraw}{06d48442ae9aeb26fe4dfa871ff311a3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2010 35th IEEE Photovoltaic Specialists Conference}
+      \field{title}{Partially shaded operation of multi-string photovoltaic systems}
+      \field{year}{2010}
+      \field{pages}{000394\bibrangedash 000399}
+      \range{pages}{6}
+    \endentry
+    \entry{JeffreyKuo2023AutomaticImaging}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=b401a58c77c15da7ccbe40a4fbf9aa0a}{%
+           family={Jeffrey\bibnamedelima Kuo},
+           familyi={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+           given={Chung\bibnamedelima Feng},
+           giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=03368fa7fd1e7afbd57a98de86fe61a4}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Sung\bibnamedelima Hua},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=08e39c05430fcd9826f371ee0ff38054}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Chao\bibnamedelima Yang},
+           giveni={C\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pergamon}%
+      }
+      \strng{namehash}{1ee22eb79502d9a4e869ba5ae5f2430a}
+      \strng{fullhash}{7282c4b61a86f2d4f5a9b649875167a3}
+      \strng{fullhashraw}{7282c4b61a86f2d4f5a9b649875167a3}
+      \strng{bibnamehash}{7282c4b61a86f2d4f5a9b649875167a3}
+      \strng{authorbibnamehash}{7282c4b61a86f2d4f5a9b649875167a3}
+      \strng{authornamehash}{1ee22eb79502d9a4e869ba5ae5f2430a}
+      \strng{authorfullhash}{7282c4b61a86f2d4f5a9b649875167a3}
+      \strng{authorfullhashraw}{7282c4b61a86f2d4f5a9b649875167a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0196-8904}
+      \field{journaltitle}{Energy Conversion and Management}
+      \field{month}{1}
+      \field{title}{{Automatic detection, classification and localization of defects in large photovoltaic plants using unmanned aerial vehicles (UAV) based infrared (IR) and RGB imaging}}
+      \field{volume}{276}
+      \field{year}{2023}
+      \field{pages}{116495}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/J.ENCONMAN.2022.116495
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0196890422012730
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0196890422012730
+      \endverb
+      \keyw{Automatic detection,Photovoltaic plants,Random sample consensus,Scale invariant feature transform,Thermal imager}
+    \endentry
+    \entry{dosovitskiy2020image}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=72308762399d6ab62bbd9391c64c7bfd}{%
+           family={Dosovitskiy},
+           familyi={D\bibinitperiod},
+           given={Alexey},
+           giveni={A\bibinitperiod}}}%
+        {{hash=836254958eac09b30d45dd67a75ce4fa}{%
+           family={Beyer},
+           familyi={B\bibinitperiod},
+           given={Lucas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=6807e3c00242c6bf6a3179905040471b}{%
+           family={Kolesnikov},
+           familyi={K\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b398fca6879fde89a032b8e7de2f26b5}{%
+           family={Weissenborn},
+           familyi={W\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod}}}%
+        {{hash=00b950307c7d096765bb6df00c7c5c3a}{%
+           family={Zhai},
+           familyi={Z\bibinitperiod},
+           given={Xiaohua},
+           giveni={X\bibinitperiod}}}%
+        {{hash=1a47640139e63b9b5969c969dfe95def}{%
+           family={Unterthiner},
+           familyi={U\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=965baf6fa5686a42b1564330c5e11f2f}{%
+           family={Dehghani},
+           familyi={D\bibinitperiod},
+           given={Mostafa},
+           giveni={M\bibinitperiod}}}%
+        {{hash=06829adce8713f0ace444279dcd7328f}{%
+           family={Minderer},
+           familyi={M\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c95269b4a2e23e1e526be521c7ec6ad4}{%
+           family={Heigold},
+           familyi={H\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod}}}%
+        {{hash=450963f966620925cb8fecd32f7a6ee1}{%
+           family={Gelly},
+           familyi={G\bibinitperiod},
+           given={Sylvain},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{d96316bc7578db680aba71d4226354c8}
+      \strng{fullhash}{e2f7b82b6bcaba0b27eef166b225c54a}
+      \strng{fullhashraw}{e2f7b82b6bcaba0b27eef166b225c54a}
+      \strng{bibnamehash}{e2f7b82b6bcaba0b27eef166b225c54a}
+      \strng{authorbibnamehash}{e2f7b82b6bcaba0b27eef166b225c54a}
+      \strng{authornamehash}{d96316bc7578db680aba71d4226354c8}
+      \strng{authorfullhash}{e2f7b82b6bcaba0b27eef166b225c54a}
+      \strng{authorfullhashraw}{e2f7b82b6bcaba0b27eef166b225c54a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Conference on Learning Representations (ICLR)}
+      \field{title}{An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2010.11929
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2010.11929
+      \endverb
+    \endentry
+    \entry{he2016deep}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=6b4b60e909e78633945f3f9c9dc83e01}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Kaiming},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5e72bc22dbcf0984c6d113d280e36990}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xiangyu},
+           giveni={X\bibinitperiod}}}%
+        {{hash=bb295293acacd54387339079ebbe4ead}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Shaoqing},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f85751488058842b5777c7b4074077b5}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{fullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{fullhashraw}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{bibnamehash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{authorbibnamehash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{authornamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authorfullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{authorfullhashraw}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{title}{Deep Residual Learning for Image Recognition}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1512.03385
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1512.03385
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

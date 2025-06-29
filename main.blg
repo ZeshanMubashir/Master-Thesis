@@ -1,0 +1,19 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[1] Config.pm:311> INFO - Logfile is 'main.blg'
+[101] biber-MSWIN64:340> INFO - === 
+[142] Biber.pm:420> INFO - Reading 'main.bcf'
+[235] Biber.pm:994> INFO - Found 7 citekeys in bib section 0
+[246] Biber.pm:4463> INFO - Processing section 0
+[256] Biber.pm:4654> INFO - Looking for bibtex file 'bibliography.bib' for section 0
+[309] bibtex.pm:1713> INFO - LaTeX decoding ...
+[324] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
+[387] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[387] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[387] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[387] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[396] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[403] bbl.pm:779> INFO - Output to main.bbl
+[403] Biber.pm:131> WARN - Duplicate entry key: 'ibrahim2022machine' in file 'bibliography.bib', skipping ...
+[403] Biber.pm:131> WARN - Duplicate entry key: 'maghami2016power' in file 'bibliography.bib', skipping ...
+[403] Biber.pm:131> WARN - Duplicate entry key: 'deline2010partially' in file 'bibliography.bib', skipping ...
+[403] Biber.pm:133> INFO - WARNINGS: 3
