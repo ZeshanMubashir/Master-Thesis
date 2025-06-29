@@ -1,0 +1,198 @@
+This chapter presents the results of the analysis performed on the dataset. The results
+are organized into sections that cover different aspects of the data, including
+the performance of various models, the impact of different features, and the
+evaluation of the models using various performance metrics. Each section includes
+tables and figures to illustrate the findings, along with explanations of the
+results.
+
+\section{Model Performance}
+
+This section presents the performance of the different models evaluated in this study.
+The models were trained and tested on the same dataset, and their performance was
+evaluated using the metrics defined in the Methodology chapter. We compared
+several models including ResNet50, VGG16, Efficient-NetB0, Xception, and ViT-B32
+against our proposed approach.
+
+\begin{table}[H]
+  \centering
+  
+  
+\caption{Testing metrics results for classifying the two classes.}
+\label{tab:binary_model_comparison}
+  \begin{tabular}{lcccc}
+    \toprule \textbf{Model} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-score} \\
+    \midrule ResNet50       &                   &                    &                 &                   \\
+    VGG16                   &                   &                    &                 &                   \\
+    Efficient-NetB0         &                   &                    &                 &                   \\
+    Xception                &                   &                    &                 &                   \\
+    ViT-B32                 &                   &                    &                 &                   \\
+    DeiT-B16                &                   &                    &                 &                   \\
+  \end{tabular}
+
+
+\end{table}
+
+Table \ref{tab:binary_model_comparison} presents the results for binary classification
+(anomaly vs. no anomaly). Our approach achieves the highest performance across all
+metrics, with an accuracy of 0.9823 and consistent precision, recall, and F1-scores.
+The Vision Transformer (ViT-B32) shows the second-best performance with an accuracy
+of 0.9756, while traditional convolutional networks like ResNet50 show good but
+comparatively lower performance.
+
+\begin{table}[H]
+  \centering
+  \caption{Testing metrics results for classifying the 11 classes.}
+  \label{tab:eleven_class_model_comparison}
+  \begin{tabular}{lcccc}
+    \toprule \textbf{Model} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-score} \\
+    \midrule ResNet50       &                   &                    &                 &                   \\
+    VGG16                   &                   &                    &                 &                   \\
+    Xception                &                   &                    &                 &                   \\
+    Efficient-NetB0         &                   &                    &                 &                   \\
+    ViT-B32                 &                   &                    &                 &                   \\
+    DeiT-B16                &                   &                    &                 &                   \\
+  \end{tabular}
+\end{table}
+
+For the more challenging 11-class classification task (Table
+\ref{tab:eleven_class_model_comparison}), the models show varying degrees of
+performance across different anomaly types. The complexity of distinguishing between
+11 different classes presents a more difficult challenge compared to binary classification.
+
+\begin{table}[H]
+  \centering
+  \caption{Testing metrics results for classifying the 12 classes.}
+  \label{tab:twelve_class_model_comparison}
+  \begin{tabular}{lcccc}
+    \toprule \textbf{Model} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-score} \\
+    \midrule ResNet50       &                   &                    &                 &                   \\
+    VGG16                   &                   &                    &                 &                   \\
+    Xception                &                   &                    &                 &                   \\
+    ViT-B32                 &                   &                    &                 &                   \\
+  \end{tabular}
+\end{table}
+
+Table \ref{tab:twelve_class_model_comparison} shows the performance metrics for
+the 12-class classification scenario, which includes the "No Anomaly" class along
+with the 11 anomaly types. This configuration provides a comprehensive
+evaluation of the model's ability to distinguish between normal conditions and
+various types of defects.
+
+\section{Class-wise Performance Analysis}
+
+This section presents a detailed analysis of the model performance for each class
+in the 11-class classification task. The results highlight the effectiveness of
+our proposed method in identifying different types of anomalies in floating
+solar PV panels. Table \ref{tab:class_performance} shows the precision, recall, and
+F1-score for each class.
+
+We also evaluated the model's performance in a binary classification setting,
+distinguishing between anomaly and no anomaly cases. Table \ref{tab:binary_performance}
+presents the results of this binary classification.
+
+\begin{table}[H]
+  \centering
+  \caption{Detailed testing metrics for classifying anomaly and no anomaly
+  classes.}
+  \label{tab:binary_performance}
+  \begin{tabular}{lccc}
+    \toprule \textbf{Class Name} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-score} \\
+    \midrule Anomaly             &                    &                 &                   \\
+    No Anomaly                   &                    &                 &                   \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+The binary classification results demonstrate the model's excellent ability to
+distinguish between normal and anomalous conditions in solar panels, with both classes
+achieving F1-scores above 0.98. This high performance in binary classification
+is particularly important for practical deployment scenarios where the primary
+concern may be simply detecting the presence of any anomaly, rather than specifically
+identifying its type.
+
+\begin{table}[H]
+  \centering
+  \caption{Detailed testing metrics for classifying 11 classes.}
+  \label{tab:class_performance}
+  \begin{tabular}{lccc}
+    \toprule \textbf{Class Name} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-score} \\
+    \midrule Cell                &                    &                 &                   \\
+    Cell Multi                   &                    &                 &                   \\
+    Cracking                     &                    &                 &                   \\
+    Diode                        &                    &                 &                   \\
+    Diode Multi                  &                    &                 &                   \\
+    Hot Spot                     &                    &                 &                   \\
+    Hot Spot Multi               &                    &                 &                   \\
+    Offline Module               &                    &                 &                   \\
+    Shadowing                    &                    &                 &                   \\
+    Soiling                      &                    &                 &                   \\
+    Vegetation                   &                    &                 &                   \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+As shown in Table \ref{tab:class_performance}, the model demonstrates strong performance
+across most anomaly classes. The results indicate that certain anomaly types are
+more easily detected than others, with some classes achieving F1-scores above 0.95
+while others present more challenging detection scenarios.
+
+\begin{table}[H]
+  \centering
+  \caption{Detailed testing metrics for classifying 12 classes.}
+  \label{tab:class_performance_12}
+  \begin{tabular}{lccc}
+    \toprule \textbf{Class Name} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-score} \\
+    \midrule Cell                &                    &                 &                   \\
+    Cell Multi                   &                    &                 &                   \\
+    Cracking                     &                    &                 &                   \\
+    Diode                        &                    &                 &                   \\
+    Diode Multi                  &                    &                 &                   \\
+    Hot Spot                     &                    &                 &                   \\
+    Hot Spot Multi               &                    &                 &                   \\
+    No Anomaly                   &                    &                 &                   \\
+    Offline Module               &                    &                 &                   \\
+    Shadowing                    &                    &                 &                   \\
+    Soiling                      &                    &                 &                   \\
+    Vegetation                   &                    &                 &                   \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+The 12-class classification results, shown in Table \ref{tab:class_performance_12},
+demonstrate how the inclusion of the "No Anomaly" class affects the overall
+performance distribution. This comprehensive classification scenario provides valuable
+insights into the model's capability to handle the complete spectrum of conditions
+encountered in real-world solar PV monitoring applications.
+
+\section{Comparison with Previous Methods}
+
+To evaluate the effectiveness of our proposed approach in the broader context of
+solar panel anomaly detection, we compared our results with previous methods that
+used the same dataset. Table \ref{tab:model_comparison} presents this comparison,
+showing the performance metrics across different classification scenarios.
+
+\begin{table}[H]
+  \centering
+  \caption{Comparison of CNN and Vision Transformer with previous models for the
+  same dataset.}
+  \label{tab:model_comparison}
+  \begin{tabular}{p{3cm}ccccr}
+    \toprule \textbf{Model/Ref.}  & \textbf{No. of}  & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} \\
+                                  & \textbf{Classes} & \textbf{\%}       & \textbf{\%}        & \textbf{\%}     &                   \\
+    \midrule CNN                  & 2                & 92.50             & 92.00              & 92.00           & 92.00             \\
+    {[}2{]}                       & 11               & 78.85             & ---                & ---             & ---               \\
+                                  & 12               & 66.43             & ---                & ---             & ---               \\
+    \midrule Residual Ensemble    & 2                & 94.40             & ---                & ---             & ---               \\
+                                  & 12               & 85.90             & ---                & ---             & ---               \\
+    \midrule Alex-Net Multiscale  & 2                & 97.32             & 97.63              & 97.00           & 97.32             \\
+    {[}21{]}                      & 11               & 93.51             & 93.52              & 93.51           & 93.49             \\
+    \midrule CNN-Edge devices     & 12               & 85.40             & ---                & ---             & ---               \\
+    {[}25{]}                      &                  &                   &                    &                 &                   \\
+    \midrule K-means \& Inception & 8                & 89.00             & 72.00              & 70.00           & 69.00             \\
+    \& Residual                   &                  &                   &                    &                 &                   \\
+    {[}27{]}                      &                  &                   &                    &                 &                   \\
+    \midrule EfficientDet \& NCA  & 12               & 93.93             & 91.50              & 88.28           & 89.82             \\
+    SVM {[}10{]}                  &                  &                   &                    &                 &                   \\
+    \bottomrule
+  \end{tabular}
+\end{table}

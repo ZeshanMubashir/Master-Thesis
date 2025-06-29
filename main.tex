@@ -1,0 +1,296 @@
+\documentclass[a4paper, 12pt, openany]{book}
+
+% ===================== PACKAGES =====================
+% Basic text and encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{setspace}
+\usepackage{geometry}
+
+% Page styling and headers
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[Bjarne]{fncychap}
+
+% Tables and figures
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subfig}
+
+% ================ Mathematics and symbols =========
+\usepackage{amsmath, amssymb, mathtools, bm, siunitx}
+
+% TikZ and plotting
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta, shapes, fit, calc}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+% Text positioning
+\usepackage[absolute, overlay]{textpos}
+
+% ===================== IEEE STYLE BIBLIOGRAPHY =====================
+% CHANGED FROM: \usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
+\usepackage[
+    style=ieee,              % IEEE citation style
+    backend=biber,           % Use biber backend
+    sorting=none,            % Citations in order of appearance
+    maxbibnames=99,          % Show all authors
+    doi=true,                % Show DOIs
+    isbn=false,              % Don't show ISBNs
+    url=true,                % Show URLs
+    giveninits=true,         % Use initials for first names
+    abbreviate=true          % Abbreviate journal names
+]{biblatex}
+\addbibresource{bibliography.bib}
+
+% Hyperlinks and cross-references
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+% URL handling
+\usepackage{url}
+
+% Define NTNU colors
+\definecolor{ntnu-purple}{HTML}{4F2B80} % Purple
+\definecolor{ntnu-gray}{HTML}{A7A8AA} % Gray
+\definecolor{ntnu-yellow}{HTML}{F2A900} % Yellow
+
+% ===================== PACKAGE CONFIGURATIONS =====================
+% Graphics settings
+\graphicspath{{Figures/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+% Hyperref configuration
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+    pdfauthor={Zeshan Mubshir},
+    pdftitle={Autonomous Monitoring of Floating Solar PVs Anomalies using Deep Learning Methods},
+    pdfkeywords={Solar PV, Anomaly Detection, Deep Learning},
+    pdfsubject={Master's Thesis}
+}
+
+% ===================== CUSTOM COMMANDS =====================
+\newcommand{\myemptypage}{ \null
+\thispagestyle{empty}
+\addtocounter{page}{-1}
+\newpage
+}
+
+% ===================== DOCUMENT START =====================
+\begin{document}
+    % Document formatting
+    \onehalfspacing
+    \setlength{\parindent}{1em}
+    \setlength{\parskip}{1em}
+
+    % ===================== TITLE PAGE =====================
+    \begin{titlepage}
+        \newgeometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+        \setlength{\TPHorizModule}{1cm}
+        \setlength{\TPVertModule}{1cm}
+        \textblockorigin{0cm}{0cm}
+        \begin{tikzpicture}[remember picture, overlay]
+            \fill[ntnu-purple]
+                ([xshift=0cm, yshift=-4cm]current page.north west) rectangle ++(3.5cm, -10cm);
+            \fill[white]
+                ([xshift=3.5cm, yshift=-4cm]current page.north west) rectangle ++(3cm, -10cm);
+
+            \node[
+                rotate=90,
+                anchor=center,
+                font=\sffamily\bfseries\Large,
+                color=white
+            ]
+                at
+                ([xshift=1.75cm, yshift=-9cm]current page.north west)
+                {Master's thesis};
+
+            \node[rotate=90, anchor=center, font=\sffamily\small, color=black]
+                at
+                ([xshift=2cm, yshift=-20.0cm]current page.north west)
+                {\parbox{8cm}{ \textbf{NTNU}\\ Norwegian University of Science and Technology\\ Faculty of Information Technology and Electrical Engineering\\ Department of ICT and Natural Sciences}};
+        \end{tikzpicture}
+
+        % Main title block
+        \begin{textblock*}
+            {12cm}(6cm, 5cm) \raggedright \Large Zeshan Mubshir\\[1cm]
+
+            \Large\textbf{Autonomous Monitoring and Classification of Solar PVs
+            Anomalies using Deep Learning Methods}\\[0.5cm]
+
+            \normalsize Master's thesis in Simulation and Visualization\\
+            Supervisor: Saleh Abdel-Afou Alaliyat\\ Co-supervisor: Mohammadreza Aghaei\\
+            July 2025
+        \end{textblock*}
+
+        \begin{textblock*}
+            {8cm}(6cm, 25.5cm)
+            \includegraphics[width=5cm]{Figures/NTNU Main Logo.png}
+        \end{textblock*}
+        \restoregeometry
+
+        % Add a Blank Page
+        \newpage
+
+        % Main title block
+        \begin{textblock*}
+            {12cm}(6cm, 5cm) \raggedright \Large Zeshan Mubshir\\[1cm]
+
+            \Large\textbf{Autonomous Monitoring and Classification of Solar PVs
+            Anomalies using Deep Learning Methods}\\[0.5cm]
+
+            \normalsize Master's thesis in Simulation and Visualization\\
+            Supervisor: Saleh Abdel-Afou Alaliyat\\ Co-supervisor: Mohammadreza Aghaei\\
+            July 2025
+
+            \vspace{8cm}
+
+            \normalsize \textbf{NTNU}\\ Norwegian University of Science and
+            Technology\\ Faculty of Information Technology and Electrical Engineering\\
+            Department of ICT and Natural Sciences
+        \end{textblock*}
+
+        \begin{textblock*}
+            {8cm}(6cm, 25.5cm)
+            \includegraphics[width=5cm]{Figures/NTNU Main Logo.png}
+        \end{textblock*}
+        \restoregeometry
+    \end{titlepage}
+
+    \myemptypage
+
+    % ===================== FRONT MATTER =====================
+    \frontmatter
+    \pagenumbering{roman}
+
+    % Abstract (English Abstract)
+    \chapter*{Abstract}
+    \addcontentsline{toc}{chapter}{Abstract}
+    \input{Chapters/00Abstract}
+
+    % Sammendrag (Norwegian Abstract)
+    \chapter*{Sammendrag}
+    \addcontentsline{toc}{chapter}{Sammendrag}
+    \input{Chapters/01Sammendrag}
+
+    % Preface (Introduction to the thesis)
+    \chapter*{Preface}
+    \addcontentsline{toc}{chapter}{Preface}
+    \input{Chapters/03Preface}
+
+    % Table of Contents
+    \tableofcontents
+    \addcontentsline{toc}{chapter}{Contents}
+
+    % List of Figures
+    \listoffigures
+    \addcontentsline{toc}{chapter}{\listfigurename}
+
+    % List of Tables
+    \listoftables
+    \addcontentsline{toc}{chapter}{\listtablename}
+
+    % Abbreviations
+    \chapter*{Abbreviations}
+    \addcontentsline{toc}{chapter}{Abbreviations}
+    \input{Chapters/02Abbreviations}
+
+    \myemptypage % Empty page after abbreviations
+
+    % ===================== MAIN MATTER =====================
+    \mainmatter
+    \pagenumbering{arabic}
+
+    % Page style setup
+    \pagestyle{fancy}
+    \fancyhf{} \fancyhead[LE,RO]{\thepage} \fancyhead[RE,LO]{\leftmark}
+    \setlength{\headheight}{14.49998pt}
+
+    % Chapters
+    \chapter{Introduction}
+    \input{Chapters/Ch1Introduction}
+    \cleardoublepage
+
+    \chapter{Literature Review}
+    \input{Chapters/Ch2Literature Review}
+    \cleardoublepage
+
+    \chapter{Theoretical Background}  % Fixed spelling: "Theoretical"
+    \input{Chapters/Ch3Theoratical Background}  % Fixed filename
+    \cleardoublepage
+
+    \chapter{Methodology}
+    \input{Chapters/Ch4Methodology}
+    \cleardoublepage
+
+    \chapter{Results}
+    \input{Chapters/Ch5Results}
+    \cleardoublepage
+
+    \chapter{Discussion}
+    \input{Chapters/Ch6Discussion}  % Removed .tex extension
+    \cleardoublepage
+
+    \chapter{Conclusions}
+    \input{Chapters/Ch7Conclusion}
+    \cleardoublepage
+
+    % ===================== BACK MATTER =====================
+    \backmatter
+
+    % Bibliography
+    \addcontentsline{toc}{chapter}{References}
+    \printbibliography[title={References}]  % Added title
+    \cleardoublepage
+
+    % Appendices
+    \appendix
+    \chapter*{\LARGE \textbf{Appendices}}
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0pt}
+    \fancyfoot[C]{\thepage}
+    \addcontentsline{toc}{chapter}{Appendices}
+    \input{Chapters/Ch8Appendix}
+
+    % ===================== BACK COVER =====================
+    \cleardoublepage
+    \thispagestyle{empty}
+    \newgeometry{top=0cm,bottom=0cm,left=0cm,right=0cm}
+
+    %Alternative color
+    \begin{tikzpicture}[remember picture, overlay]
+        % Light purple rectangle
+        \fill[ntnu-purple]
+            (current page.north west)
+            ++(10.0cm,-5cm) rectangle ++(25cm,-5cm);
+
+        % Light white circle with Outline of Purple line
+        \draw[fill=white, draw=ntnu-purple, opacity=0.5]
+            (current page.north west)
+            ++(10cm,-10cm)
+            circle
+            (3.5cm);
+
+        \draw[ntnu-purple, line width=1pt, opacity=0.5]
+            (current page.north west)
+            ++(10cm,-13.5cm) -- ++(0cm,-3.5cm);
+
+        \draw[ntnu-purple, line width=1.0pt, opacity=0.5]
+            (current page.north west)
+            ++(10cm,-17cm) -- ++(15.0cm,0cm);
+
+        % NTNU logo at bottom left
+        \node[anchor=south west]
+            at
+            ($(current page.south west) + (5.0,5.0)$)
+            {\includegraphics[width=5cm]{Figures/NTNU Main Logo.png}};
+    \end{tikzpicture}
+
+    \restoregeometry
+\end{document}

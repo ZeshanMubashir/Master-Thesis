@@ -1,0 +1,64 @@
+% Start with an introductory paragraph for the chapter.
+In this chapter, we discuss the results presented in the previous chapter,
+interpreting their significance and implications. We also acknowledge the limitations
+of the study, provide a concluding summary, and suggest directions for future research.
+
+\section{Discussion}
+
+The results of our experiments demonstrate the effectiveness of [Your Model, e.g.,
+the fine-tuned ViT model] in detecting anomalies in infrared images of solar panels.
+The high F1-score of [Your Score] for the [Best Class] class suggests that
+\cite{ibrahim2022machine} the model is particularly adept at identifying [Type of Anomaly].
+
+This performance can be attributed to [Reason, e.g., the Vision Transformer's
+ability to capture global context within the image...]. When compared to the baseline
+[e.g., ResNet50] model, our proposed architecture achieved a [e.g., 5%] improvement in overall accuracy. This finding aligns with recent studies by [Author, Year], which also highlight the advantages of transformer-based models in specialized computer vision tasks.
+
+\subsection{Implications of the Results}
+The findings of this research have several practical implications for the solar energy
+industry. The successful application of [Your Technology] for automated anomaly
+detection can lead to:
+\begin{itemize}
+    \item \textbf{Improved Maintenance Efficiency:} Automated systems can
+        rapidly scan thousands of panels, allowing maintenance teams to focus their
+        efforts on confirmed defects, thereby reducing operational costs.
+
+    \item \textbf{Increased Energy Yield:} Early detection of issues like \cite{}
+        soiling, cracking, or faulty diodes prevent long-term power loss and
+        maximizes the energy output of solar farms.
+
+    \item \textbf{Enhanced Safety:} Identifying potential hazards such as hot
+        spots can prevent catastrophic failures and improve the overall safety
+        of solar installations.
+\end{itemize}
+From a research perspective, this work contributes to the growing body of
+literature on applying deep learning to renewable energy infrastructure, demonstrating
+that models pre-trained on natural images can be successfully fine-tuned for highly
+specialized thermal imaging tasks.
+
+\section{Limitations}
+
+While this study provides valuable insights, it is important to acknowledge its limitations.
+\begin{itemize}
+    \item \textbf{Dataset Specificity:} The models were trained and evaluated
+        exclusively on the \textit{IR} dataset. Their performance may vary on
+        images captured with different thermal cameras, under different environmental
+        conditions, or from different types of solar panels not represented in
+        the dataset.
+
+    \item \textbf{Class Imbalance:} Despite using data augmentation, the significant
+        imbalance in the dataset, especially the underrepresentation of classes
+        like "Soiling" and "Hot-Spot-Multi," may have limited the model's ability
+        to learn robust features for these rare anomalies.
+
+    \item \textbf{Computational Resources:} The scope of hyperparameter tuning
+        was constrained by the available computational resources. A more extensive
+        search could potentially yield a model with even higher performance.
+\end{itemize}
+
+\section{Conclusion}
+
+This research set out to develop and evaluate deep learning models for the
+automated detection of anomalies in solar panels using infrared imagery. We successfully
+implemented and compared several architectures, including CNNs and Vision
+Transformers, on the publicly available \textit{IR} dataset.
