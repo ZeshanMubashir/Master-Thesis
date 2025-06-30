@@ -36,6 +36,26 @@ FPV systems offer several distinct advantages over traditional land-based instal
     \item \textbf{Grid integration synergies}: FPV installations can leverage existing hydroelectric infrastructure, including transmission lines and grid connections, reducing overall system costs and complexity
 \end{itemize}
 
+\begin{table}[H]
+\centering
+\caption{Comparison of Land-based and Floating PV Systems}
+\label{tab:land_vs_floating_pv}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Characteristics} & \textbf{Land-based PV} & \textbf{Floating PV} \\
+\midrule
+Efficiency Improvement & Baseline & 5-15\% higher \\
+Water Evaporation Reduction & N/A & 42-83\% \\
+Land Use & High requirement & Zero requirement \\
+Energy Payback Time & 1.5-2 years & 1.3 years \\
+Cooling Effect & Natural air & Water cooling \\
+Installation Complexity & Low & Moderate-High \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table \ref{tab:land_vs_floating_pv} summarizes the key differences between land-based and floating PV systems. The advantages of FPV systems are particularly evident in their enhanced efficiency due to water cooling, significant water conservation benefits, and elimination of land use competition.
+
 \section{Anomaly Types in Photovoltaic Systems}
 
 Understanding the various types of anomalies that can affect PV systems is crucial for effective monitoring and maintenance strategies. These anomalies can significantly impact system performance, efficiency, and longevity.
@@ -98,6 +118,32 @@ FPV systems face additional challenges related to their aquatic environment:
     \item \textbf{Structural instability}: Platform movement or anchoring system failures
     \item \textbf{Marine biofouling}: Attachment of aquatic organisms to system components
 \end{itemize}
+
+\begin{table}[H]
+\centering
+\caption{Classification of PV System Anomalies}
+\label{tab:anomaly_classification}
+\begin{tabular}{llcc}
+\toprule
+\textbf{Category} & \textbf{Anomaly Type} & \textbf{Impact Level} & \textbf{Detection Method} \\
+\midrule
+Thermal & Hot Spots & High & IR Thermography \\
+& Cell Overheating & Medium & IR Thermography \\
+\midrule
+Physical & Cell Cracks & High & EL/Visual \\
+& Module Damage & High & Visual \\
+\midrule
+Environmental & Soiling & Medium & Visual/IR \\
+& Shading & Medium & Visual/IR \\
+& Vegetation & Medium & Visual \\
+\midrule
+Electrical & Diode Failure & High & EL/Electrical \\
+& Module Disconnection & High & Electrical \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table \ref{tab:anomaly_classification} provides a systematic classification of the various anomaly types that can affect PV systems, along with their typical impact levels and the most suitable detection methods for each category.
 
 \section{Power Loss Mechanisms in PV Systems}
 
@@ -198,6 +244,24 @@ Electroluminescence imaging is a specialized technique that visualizes the inter
     \item Limited to controlled environments
     \item Time-intensive data acquisition
 \end{itemize}
+
+\begin{table}[H]
+\centering
+\caption{Comparison of Anomaly Detection Methods}
+\label{tab:detection_methods}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Method} & \textbf{Cost} & \textbf{Speed} & \textbf{Accuracy} & \textbf{Scalability} & \textbf{Automation} \\
+\midrule
+Visual Inspection & Low & Low & Medium & Low & Low \\
+IR Thermography & Medium & High & High & High & High \\
+EL Imaging & High & Low & Very High & Low & Medium \\
+Machine Learning & Medium & Very High & Very High & Very High & Very High \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table \ref{tab:detection_methods} compares the various anomaly detection methods across multiple criteria. Machine learning approaches demonstrate superior performance in terms of speed, accuracy, scalability, and automation potential, making them particularly suitable for large-scale PV monitoring applications.
 
 \section{Artificial Intelligence and Machine Learning}
 

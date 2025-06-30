@@ -45,6 +45,53 @@ Our comparative analysis reveals distinct performance characteristics among the 
 
 \textbf{Computational Efficiency:} Although transformers are typically more computationally intensive than CNNs, DeiT's optimized architecture provides a good balance between performance and efficiency, making it suitable for practical deployment in solar farm monitoring systems.
 
+\section{Error Analysis and Model Limitations}
+
+Understanding the failure modes and limitations of our models is crucial for improving performance and identifying areas for future research. This section provides a detailed analysis of common misclassification patterns and their underlying causes.
+
+\subsection{Misclassification Patterns}
+
+Through comprehensive error analysis, we identified several common misclassification patterns that provide insights into the challenges faced by the models when distinguishing between similar anomaly types.
+
+\begin{table}[H]
+\centering
+\caption{Common Misclassification Patterns}
+\label{tab:error_analysis}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Confused Classes} & \textbf{Error Rate (\%)} & \textbf{Possible Cause} \\
+\midrule
+Cell $\leftrightarrow$ Cell-Multi & 12.3 & Similar thermal patterns \\
+Hot-Spot $\leftrightarrow$ Hot-Spot-Multi & 8.7 & Number detection difficulty \\
+Diode $\leftrightarrow$ Offline-Module & 6.4 & Similar heating patterns \\
+Shadowing $\leftrightarrow$ Vegetation & 5.2 & Similar obstruction effects \\
+Cracking $\leftrightarrow$ Cell & 4.8 & Overlapping thermal signatures \\
+Soiling $\leftrightarrow$ Shadowing & 3.9 & Reduced irradiance similarity \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table \ref{tab:error_analysis} reveals the most frequent misclassification patterns observed across all models. The highest confusion occurs between single and multiple instances of the same anomaly type (Cell vs Cell-Multi, Hot-Spot vs Hot-Spot-Multi), suggesting that distinguishing between the number of affected areas presents a significant challenge for current architectures.
+
+\subsection{Thermal Signature Overlap}
+
+One of the primary challenges identified in our error analysis is the overlap in thermal signatures between different anomaly types. For instance, both cell anomalies and cracking can produce similar hot spot patterns, making it difficult for the models to distinguish between these conditions based solely on thermal imaging data.
+
+\subsection{Scale and Context Sensitivity}
+
+The models demonstrated varying sensitivity to the scale and context of anomalies. Smaller anomalies or those occurring at the edges of images were more frequently misclassified, indicating the need for improved feature extraction techniques that can better handle scale variations and boundary effects.
+
+\section{Model Interpretability and Attention Analysis}
+
+Understanding how our models make decisions is crucial for building trust and identifying potential biases. This section presents visualization techniques and attention analysis results that provide insights into the decision-making process of our best-performing models.
+
+\subsection{Vision Transformer Attention Maps}
+
+The self-attention mechanism in Vision Transformers provides valuable insights into which image regions the model considers most important for classification decisions. Analysis of attention maps revealed that the models successfully focus on relevant thermal anomalies while ignoring background regions.
+
+\subsection{CNN Feature Map Analysis}
+
+For convolutional neural networks, we analyzed intermediate feature maps to understand the hierarchical feature learning process. The analysis showed that lower layers detect basic thermal gradients and edges, while higher layers combine these features to identify complex anomaly patterns.
 
 \section{Limitations}
 

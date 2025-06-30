@@ -3,3 +3,66 @@ architecture that relies entirely on self-attention mechanisms, discarding
 recurrence and convolutions entirely. This architecture has been shown to be highly
 effective for various natural language processing tasks, including machine
 translation, text summarization, and question answering.
+
+\section{Convolutional Neural Networks (CNNs)}
+
+Convolutional Neural Networks represent a specialized class of deep neural networks particularly well-suited for processing grid-like data such as images. CNNs leverage the mathematical operation of convolution to extract local features through learnable filters, building hierarchical representations from low-level edges to high-level semantic concepts.
+
+Key characteristics of CNNs include:
+\begin{itemize}
+    \item \textbf{Local connectivity}: Each neuron connects only to a local region of the input
+    \item \textbf{Parameter sharing}: The same filter weights are applied across the entire input
+    \item \textbf{Translation invariance}: Features can be detected regardless of their position
+    \item \textbf{Hierarchical feature learning}: Progressive abstraction from simple to complex features
+\end{itemize}
+
+The success of CNNs in computer vision tasks stems from their strong inductive bias towards local spatial relationships, making them naturally suited for image classification, object detection, and anomaly detection in visual data.
+
+\section{Vision Transformers (ViTs)}
+
+Vision Transformers adapt the transformer architecture, originally designed for natural language processing, to computer vision tasks. Unlike CNNs, ViTs treat images as sequences of patches and apply self-attention mechanisms to capture global relationships across the entire image.
+
+The ViT architecture involves:
+\begin{itemize}
+    \item \textbf{Patch embedding}: Dividing images into fixed-size patches and linearly embedding them
+    \item \textbf{Position encoding}: Adding positional information to maintain spatial relationships
+    \item \textbf{Multi-head self-attention}: Computing attention weights between all patch pairs
+    \item \textbf{Global receptive field}: Each layer can attend to all parts of the image simultaneously
+\end{itemize}
+
+Vision Transformers have demonstrated remarkable performance on large-scale datasets, often surpassing CNNs when sufficient training data is available. Their ability to capture long-range dependencies makes them particularly effective for complex visual understanding tasks.
+
+\begin{table}[H]
+\centering
+\caption{Comparison of CNN and Vision Transformer Architectures}
+\label{tab:cnn_vs_transformer}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Characteristics} & \textbf{CNN} & \textbf{Vision Transformer} \\
+\midrule
+Inductive Bias & Strong (locality) & Weak \\
+Data Requirement & Low-Medium & High \\
+Computational Complexity & O(n²) per layer & O(n²) global \\
+Feature Learning & Hierarchical & Global attention \\
+Transfer Learning & Good & Excellent \\
+Interpretability & Medium & High \\
+Training Stability & High & Medium \\
+Parameter Efficiency & High & Medium \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table \ref{tab:cnn_vs_transformer} highlights the fundamental differences between CNN and Vision Transformer architectures. While CNNs excel with limited data due to their strong inductive biases, Vision Transformers demonstrate superior performance and transfer learning capabilities when large datasets are available.
+
+\section{Self-Attention Mechanism}
+
+The self-attention mechanism forms the core of transformer architectures, enabling models to weigh the importance of different parts of the input when processing each element. In the context of vision transformers, self-attention allows the model to focus on relevant image patches when classifying or detecting anomalies.
+
+The mathematical formulation of self-attention involves:
+\begin{itemize}
+    \item \textbf{Query (Q)}, \textbf{Key (K)}, and \textbf{Value (V)} matrices derived from input embeddings
+    \item \textbf{Attention weights} computed as the similarity between queries and keys
+    \item \textbf{Weighted combination} of values based on attention scores
+\end{itemize}
+
+This mechanism enables transformers to capture complex relationships and dependencies across the entire input sequence, making them particularly effective for tasks requiring global context understanding.

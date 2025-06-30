@@ -17,33 +17,33 @@ type of anomaly present, such as hot spots, cracks, and soiling etc.
 % Start a Table for the dataset
 \begin{table}[htbp]
     \centering
-    \begin{tabular}{|l|c|>{\raggedright\arraybackslash}p{7cm}|}
+    \begin{tabular}{|>{\centering\arraybackslash}l|>{\centering\arraybackslash}c|>{\centering\arraybackslash}c|>{\centering\arraybackslash}p{7cm}|>{\centering\arraybackslash}c|}
         \hline
-        \textbf{Class} & \textbf{No. of Images} & \textbf{Description} \\
+        \textbf{Class} & \textbf{No. of Images} & \textbf{\%} & \textbf{Description} & \textbf{Images} \\
         \hline
-        Cell           & 1,877                  & Hot spot occurring with square geometry in a single cell.                \\
+        Cell           & 1,877                  & 9.39\%      & Hot spot occurring with square geometry in a single cell.                & \includegraphics[width=0.8cm]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\ 
         \hline
-        Cell-Multi     & 1,288                  & Hot spots occurring with square geometry in multiple cells.               \\
+        Cell-Multi     & 1,288                  & 6.44\%      & Hot spots occurring with square geometry in multiple cells.               & \includegraphics[width=0.8cm]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
         \hline
-        Cracking       & 941                    & Module anomaly caused by cracking on the module surface.                  \\
+        Cracking       & 941                    & 4.71\%      & Module anomaly caused by cracking on the module surface.                  & \includegraphics[width=0.8cm]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
         \hline
-        Hot-Spot       & 251                    & Hot spot on a thin film module.                                           \\
+        Hot-Spot       & 251                    & 1.26\%      & Hot spot on a thin film module.                                           & \includegraphics[width=0.8cm]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
         \hline
-        Hot-Spot-Multi & 247                    & Multiple hot spots on a thin film module.                                 \\
+        Hot-Spot-Multi & 247                    & 1.24\%      & Multiple hot spots on a thin film module.                                 & \includegraphics[width=0.8cm]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
         \hline
-        Shadowing      & 1056                   & Sunlight obstructed by vegetation, man-made structures, or adjacent rows. \\
+        Shadowing      & 1056                   & 5.28\%      & Sunlight obstructed by vegetation, man-made structures, or adjacent rows. & \includegraphics[width=0.8cm]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
         \hline
-        Diode          & 1,499                  & Activated bypass diode, typically 1/3 of the module.                      \\
+        Diode          & 1,499                  & 7.50\%      & Activated bypass diode, typically 1/3 of the module.                      & \includegraphics[width=0.8cm]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
         \hline
-        Diode-Multi    & 175                    & Multiple activated bypass diodes, typically affecting 2/3 of the module.  \\
+        Diode-Multi    & 175                    & 0.88\%      & Multiple activated bypass diodes, typically affecting 2/3 of the module.  & \includegraphics[width=0.8cm]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
         \hline
-        Vegetation     & 1,639                  & Panels blocked by vegetation.                                             \\
+        Vegetation     & 1,639                  & 8.20\%      & Panels blocked by vegetation.                                             & \includegraphics[width=0.8cm]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
         \hline
-        Soiling        & 205                    & Dirt, dust, or other debris on the surface of the module.                 \\
+        Soiling        & 205                    & 1.03\%      & Dirt, dust, or other debris on the surface of the module.                 & \includegraphics[width=0.8cm]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
         \hline
-        Offline-Module & 828                    & The Entire module is heated.                                              \\
+        Offline-Module & 828                    & 4.14\%      & The Entire module is heated.                                              & \includegraphics[width=0.8cm]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
         \hline
-        No-Anomaly     & 10,000                 & Nominal solar module.                                                     \\
+        No-Anomaly     & 10,000                 & 50.03\%     & Nominal solar module.                                                     & \includegraphics[width=0.8cm]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
         \hline
     \end{tabular}
 
@@ -53,11 +53,10 @@ type of anomaly present, such as hot spots, cracks, and soiling etc.
     \label{tab:dataset_overview}
 \end{table}
 
-It is important to note that the
-dataset contains 10,000 images of nominal solar modules and 10,000 images of 11 different
+
+It is important to note that the dataset contains 10,000 images of nominal solar modules and 10,000 images of 11 different
 types of anomalies, resulting in a total of 20,000 images. The dataset is perfectly
-balanced for 2 class classification (Anomaly vs No-Anomaly), with each class
-containing an equal number of images. But for multi-class classification, the
+balanced for 2 class classification (Anomaly vs No-Anomaly), with each class containing an equal number of images. But for multi-class classification, the
 dataset is imbalanced, with some classes having significantly more images than others.
 This imbalance can affect the performance of machine learning models, as they may
 become biased towards the majority class. Therefore, it is important to consider
@@ -77,12 +76,18 @@ or anomalies that can occur in solar panel systems:
         cell.
 
     \item \textbf{Cell-Multi} - Hot spots occurring with square geometry in
-        multiple cells.
+        multiple cells. 
 
     \item \textbf{Cracking} - Module anomaly caused by cracking on module
         surface.
 
-    \item \textbf{Hot-Spot} - Hot spot on a thin film module.
+    \item \textbf{Hot-Spot} - Hot spot on a thin film module. Hot spots are localized areas of elevated temperature that can occur due to various factors such as manufacturing defects, partial shading, or electrical mismatches within the solar cell. These thermal anomalies can significantly impact the performance and longevity of solar modules by causing power losses and potential damage to the affected cells.
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.25\textwidth]{Figures/Solar PV/Original Dataset/image25_inferno.png}
+        \caption{Example of a Hot-Spot anomaly in a thin film module}
+        \label{fig:hot_spot_example}
+    \end{figure}
 
     \item \textbf{Hot-Spot-Multi} - Multiple hot spots on a thin film module.
 
@@ -102,6 +107,43 @@ or anomalies that can occur in solar panel systems:
 
     \item \textbf{No-Anomaly} - Nominal solar module.
 \end{itemize}
+
+
+\begin{longtable}{ll}
+\caption{Sample images from each class in the dataset.} \label{tab:sample_images} \\
+\toprule \textbf{Class Name} & \textbf{Sample Image} \\
+\midrule
+\endfirsthead
+
+\multicolumn{2}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\toprule \textbf{Class Name} & \textbf{Sample Image} \\
+\midrule
+\endhead
+
+\midrule \multicolumn{2}{r}{{Continued on next page}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+Cell & \includegraphics[width=0.08\textwidth]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
+Cell Multi & \includegraphics[width=0.08\textwidth]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
+Cracking & \includegraphics[width=0.08\textwidth]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
+Diode & \includegraphics[width=0.08\textwidth]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
+Diode Multi & \includegraphics[width=0.08\textwidth]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
+Hot Spot & \includegraphics[width=0.08\textwidth]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
+Hot Spot Multi & \includegraphics[width=0.08\textwidth]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
+No Anomaly & \includegraphics[width=0.08\textwidth]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
+Offline Module & \includegraphics[width=0.08\textwidth]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
+Shadowing & \includegraphics[width=0.08\textwidth]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
+Soiling & \includegraphics[width=0.08\textwidth]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
+Vegetation & \includegraphics[width=0.08\textwidth]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
+Water Damage & \includegraphics[width=0.08\textwidth]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
+Corrosion & \includegraphics[width=0.08\textwidth]{Figures/Solar PV/Original Dataset/image25_inferno.png} \\
+\end{longtable}
+
+Table \ref{tab:sample_images} presents sample images from each of the 12 classes in the dataset, arranged in alphabetical order. These visual examples demonstrate the distinct characteristics and patterns associated with each type of anomaly or normal condition in solar PV panels. The images help illustrate the visual differences between various anomaly types, which is crucial for understanding the classification challenges and the effectiveness of the deep learning models in distinguishing between these classes.
 
 \section{Data Preprocessing and Augmentation}
 
@@ -130,7 +172,7 @@ of images for further analysis and interpretation.\cite{deline2010partially}
 
 \subsubsection{Image Resizing}
 
-All images in the dataset were resized to a consistent resolution of 160×160 pixels
+All images in the dataset were resized to a consistent resolution of 160$\times$160 pixels
 to ensure uniformity across the training data. This standardization is essential
 for batch processing and maintaining consistent input dimensions for the neural
 network architectures.
@@ -166,6 +208,27 @@ the training data before the training process begins. These augmented versions a
 precomputed and stored, effectively increasing the size of the training dataset.
 This approach is useful when computational resources during training are limited
 or when the augmentation transformations are computationally expensive.
+
+\begin{table}[H]
+\centering
+\caption{Data Augmentation Techniques Applied}
+\label{tab:augmentation_techniques}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Technique} & \textbf{Parameter Range} & \textbf{Classes Applied} & \textbf{Images Generated} \\
+\midrule
+Rotation & ±15° & All minority classes & 2,000 \\
+Horizontal Flip & 50\% probability & All classes & 1,500 \\
+Brightness Adjustment & ±20\% & All classes & 1,000 \\
+Contrast Enhancement & 0.8-1.2 & Hot-Spot classes & 800 \\
+Gaussian Noise & $\sigma=0.01$ & All classes & 1,200 \\
+Shear Transformation & ±10° & Diode classes & 600 \\
+Zoom & 0.9-1.1 & Cell classes & 900 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table \ref{tab:augmentation_techniques} summarizes the specific data augmentation techniques applied to address class imbalance in the dataset. These transformations were strategically applied to minority classes to improve overall model performance and reduce bias towards majority classes.
 
 \subsubsection{Online Data Augmentation}
 
@@ -236,6 +299,23 @@ between different color spaces. Pillow is widely used in computer vision
 applications, web development, and data preprocessing tasks where image
 manipulation is required.
 
+\subsubsection{Unsharp Mask Filter}
+
+The Unsharp Mask Filter is a technique used to enhance the edges of an image by
+applying a mask to the image. It is a type of image processing technique that is
+used to improve the contrast of an image. The Unsharp Mask Filter is a type of
+image processing technique that is used to improve the contrast of an image.
+
+% Add a figure for the Unsharp Mask Filter
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Figures/Solar PV/Original Dataset/image25_inferno.png}
+    \caption{Unsharp Mask Filter}
+    \label{fig:unsharp_mask_filter}
+\end{figure}
+
+
+
 \section{Deep Learning Approaches}
 
 \subsection{Transfer Learning}
@@ -284,6 +364,50 @@ This section presents the deep learning architectures employed for anomaly
 detection in floating solar PV systems. We explore several approaches including Convolutional
 Neural Networks (CNNs), Vision Transformers (ViTs), and Data-efficient Image
 Transformer (DeiT) architectures.
+
+\begin{table}[H]
+\centering
+\caption{Model Architecture Specifications}
+\label{tab:model_architectures}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Model} & \textbf{Parameters} & \textbf{Input Size} & \textbf{Layers} & \textbf{Pre-trained} \\
+\midrule
+ResNet50 & 25.6M & 224$\times$224 & 50 & ImageNet \\
+VGG16 & 138M & 224$\times$224 & 16 & ImageNet \\
+EfficientNet-B0 & 5.3M & 224$\times$224 & Variable & ImageNet \\
+Xception & 22.9M & 299$\times$299 & 71 & ImageNet \\
+ViT-B32 & 88M & 224$\times$224 & 12 & ImageNet-21k \\
+DeiT-B16 & 86M & 224$\times$224 & 12 & ImageNet \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table \ref{tab:model_architectures} provides an overview of the different model architectures evaluated in this study, including their parameter counts, input requirements, architectural depth, and pre-training datasets. The diversity in model sizes and architectures allows for comprehensive comparison of different approaches to solar panel anomaly detection.
+
+\begin{table}[H]
+\centering
+\caption{Training Hyperparameters}
+\label{tab:hyperparameters}
+\begin{tabular}{lc}
+\toprule
+\textbf{Parameter} & \textbf{Value} \\
+\midrule
+Batch Size & 32 \\
+Learning Rate & 0.001 \\
+Optimizer & Adam \\
+Epochs & 100 \\
+Early Stopping Patience & 15 \\
+Learning Rate Scheduler & ReduceLROnPlateau \\
+Weight Decay & 0.0001 \\
+Dropout Rate & 0.3 \\
+Loss Function & CrossEntropyLoss \\
+Validation Split & 20\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table \ref{tab:hyperparameters} details the training configuration used across all models to ensure fair comparison. These hyperparameters were selected based on preliminary experiments and established best practices for deep learning on image classification tasks.
 
 \subsection{CNN Models}
 
@@ -387,44 +511,63 @@ mathematically represented as follows:
 
 \begin{table}[htbp]
     \centering
-    \begin{tabular}{|l|c|}
+    \begin{tabular}{|l|c|c|}
         \hline
-        \textbf{Hyperparameter}          & \textbf{Vision Transformer (ViT)} \\
+        \textbf{Hyperparameter}          & \textbf{Vision Transformer (ViT-B32)} & \textbf{DeiT (DeiT-B16)} \\
         \hline
-        Learning Rate                    & \textit{1e-4}                     \\
+        Learning Rate                    & $1 \times 10^{-4}$                     & $1 \times 10^{-4}$          \\
         \hline
-        Batch Size                       & 32                                \\
+        Batch Size                       & 32                                & 32                     \\
         \hline
-        Epochs                           & 100                               \\
+        Epochs                           & 100                               & 100                    \\
         \hline
-        Optimizer                        & AdamW                             \\
+        Optimizer                        & AdamW                             & AdamW                  \\
         \hline
-        Weight Decay                     & 0.01                              \\
+        Weight Decay                     & 0.01                              & 0.01                   \\
         \hline
-        Image Size                       & 160×160                           \\
+        Image Size                       & 224$\times$224                           & 224$\times$224                \\
         \hline
-        Patch Size                       & 16×16                             \\
+        Patch Size                       & 32$\times$32                             & 16$\times$16                  \\
         \hline
-        Number of Heads                  & 12                                \\
+        Number of Heads                  & 12                                & 12                     \\
         \hline
-        Number of Layers                 & 12                                \\
+        Number of Layers                 & 12                                & 12                     \\
         \hline
-        Hidden Dimension                 & 768                               \\
+        Hidden Dimension                 & 768                               & 768                    \\
         \hline
-        MLP Dimension                    & 3072                              \\
+        MLP Dimension                    & 3072                              & 3072                   \\
         \hline
-        Dropout Rate                     & 0.1                               \\
+        Dropout Rate                     & 0.1                               & 0.1                    \\
         \hline
-        Output layer Activation Function & GELU                              \\
+        Output layer Activation Function & GELU                              & GELU                   \\
         \hline
-        Learning Rate Scheduler          & CosineAnnealingLR                 \\
+        Learning Rate Scheduler          & CosineAnnealingLR                 & CosineAnnealingLR      \\
         \hline
-        Early Stopping Patience          & 10                                \\
+        Early Stopping Patience          & 10                                & 10                     \\
         \hline
     \end{tabular}
-    \caption{Hyperparameters for Vision Transformer Model}
+    \caption{Hyperparameters for Vision Transformer Models (ViT-B32 and DeiT-B16)}
     \label{tab:vit_hyperparameters}
 \end{table}
+
+\subsubsection{Cosine Annealing Learning Rate Scheduler}
+
+The Cosine Annealing Learning Rate Scheduler is a type of learning rate scheduler that
+is used to adjust the learning rate of the model during training. It is a type of
+learning rate scheduler that is used to adjust the learning rate of the model during
+training. It is a type of learning rate scheduler that is used to adjust the learning
+rate of the model during training. It is a type of learning rate scheduler that is
+used to adjust the learning rate of the model during training.
+
+
+\subsubsection{GELU Activation Function}
+
+The GELU Activation Function is a type of activation function that is used to
+introduce non-linearity into the model. It is a type of activation function that is
+used to introduce non-linearity into the model. It is a type of activation function
+that is used to introduce non-linearity into the model. It is a type of activation
+function that is used to introduce non-linearity into the model.
+
 
 \subsection{DeiT - Data-efficient Image Transformer}
 
@@ -741,15 +884,3 @@ t-SNE helps address the challenge of understanding high-dimensional feature repr
         as feature overlap between different anomaly classes or poor separation
         between normal and anomalous samples.
 \end{itemize}
-
-\subsection{Grad-CAM Visualization}
-
-Grad-CAM (Gradient-weighted Class Activation Mapping) is a technique used to visualize
-the regions of an image that contribute most to a model's prediction. It is
-particularly useful for understanding the decision-making process of deep
-learning models, especially convolutional neural networks (CNNs) and Vision Transformers
-(ViTs). Grad-CAM provides insights into which parts of an image are most
-relevant to a specific class prediction, helping to interpret the model's behavior
-and identify potential areas of interest or concern.
-
-% Add proper citation for the InfraredSolarModules dataset here
