@@ -115,22 +115,6 @@ encoding categorical variables.
 
 \section{Image Filter}
 
-\subsection{Histogram Equalization}
-
-Histogram equalization is a technique used to enhance the contrast of images by redistributing
-the intensity values across the entire range of possible values. This process
-improves the visibility of features in an image, making it easier to distinguish
-between different regions and objects. The technique works by transforming the
-cumulative distribution function (CDF) of the pixel intensities to a uniform
-distribution, effectively spreading out the most frequent intensity values and making
-the histogram of the image more uniform. This results in an image with enhanced
-contrast, where the details in both dark and bright areas are more visible.
-Histogram equalization is particularly useful in applications such as medical
-imaging, remote sensing, and computer vision, where it helps improve the quality
-of images for further analysis and interpretation.\cite{deline2010partially}
-
-%Add Mathematical equations for CLAHE
-\subsection{Image Resizing}
 
 \subsection{Data Augmentation}
 
@@ -195,9 +179,7 @@ between different color spaces. Pillow is widely used in computer vision
 applications, web development, and data preprocessing tasks where image
 manipulation is required.
 
-Pytorch:
-
-Pillow: Pillow is a Python Imaging Library (PIL) fork that provides easy-to-use image
+Pillow: A user-friendly library forked from the Python Imaging Library (PIL) that simplifies image processing in Python.
 
 The experiments in this research were conducted using the hardware
 specifications as described in the table below.
@@ -238,7 +220,7 @@ of solar panel images.
 \section{Fine Tuning}
 Fine tuning is the process of taking a pre-trained model and further training it
 on a specific dataset to adapt it to a particular task. For the anomaly
-detection task in floating solar PVs, the pre-trained CNN and Vision Transformer
+detection task in floating solar PVs, the pre-trained  and Vision Transformer
 models are fine-tuned on the InfraredSolarModules dataset.
 
 The fine-tuning process involves:
@@ -265,12 +247,10 @@ detection in floating solar PV systems. We explore several approaches including 
 Neural Networks (CNNs), Vision Transformers (ViTs), and (DeiT) Data-efficient Image
 Transformer architectures.
 
-\subsection{CNN Models}
-
 \subsection{Vision Transformer (ViT)}
 
 Vision Transformer (ViT) is a type of neural network architecture that applies the
-principles of transformers, originally designed for natural language processing,
+principles of transformers, originally designed for (NLP),
 to computer vision tasks~\cite{dosovitskiy2020image}. The key idea is to treat an image as a sequence of
 patches, similar to how words are treated in text. This allows the model to
 capture long-range dependencies and relationships within the image data. The ViT
@@ -526,11 +506,11 @@ complementary representations.
 \section{Evaluation Metrics}
 Evaluation metrics are essential for assessing the performance of deep learning
 models. They provide quantitative measures to evaluate how well a model performs
-on a given task, such as classification or regression. Common evaluation metrics
+on a given task, such as classification. Common evaluation metrics
 include accuracy, precision, recall, F1-score, and area under the ROC curve (A
 UC-ROC). These metrics help in understanding the strengths and weaknesses of a
 model, guiding the selection of the best model for a specific task. In the
-context of anomaly detection in floating solar PVs, evaluation metrics are crucial
+context of anomaly detection in solar PVs, evaluation metrics are crucial
 for determining the effectiveness of the model in identifying defects and ensuring
 the reliability and efficiency of the solar power generation system.
 \subsection{Accuracy}
