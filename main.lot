@@ -1,17 +1,27 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Comparison of Land-based and Floating PV Systems}}{6}{table.caption.9}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Classification of PV System Anomalies}}{8}{table.caption.10}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Comparison of Anomaly Detection Methods}}{11}{table.caption.11}%
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Comparison of CNN and Vision Transformer Architectures}}{16}{table.caption.12}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Overview of the IR Dataset}}{16}{table.caption.9}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces System Hardware Specifications}}{19}{table.caption.10}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Hyperparameters for Vision Transformer Model}}{22}{table.caption.11}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Overview of the IR Dataset}}{20}{table.caption.13}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Sample images from each class in the dataset.}}{22}{table.4.2}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Data Augmentation Techniques Applied}}{25}{table.caption.15}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces System Hardware Specifications}}{26}{table.caption.16}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Model Architecture Specifications}}{28}{table.caption.18}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Training Hyperparameters}}{29}{table.caption.19}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Hyperparameters for Vision Transformer Models (ViT-B32 and DeiT-B16)}}{31}{table.caption.20}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Testing metrics results for classifying the two classes.}}{29}{table.caption.12}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Testing metrics results for classifying the 11 classes.}}{30}{table.caption.13}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Testing metrics results for classifying the 12 classes.}}{30}{table.caption.14}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces Detailed testing metrics for classifying anomaly and no anomaly classes.}}{30}{table.caption.15}%
-\contentsline {table}{\numberline {5.5}{\ignorespaces Detailed testing metrics for classifying 11 classes.}}{31}{table.caption.16}%
-\contentsline {table}{\numberline {5.6}{\ignorespaces Detailed testing metrics for classifying 12 classes.}}{31}{table.caption.17}%
-\contentsline {table}{\numberline {5.7}{\ignorespaces Comparison of CNN and Vision Transformer with previous models for the same dataset.}}{32}{table.caption.18}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Testing metrics results for classifying the two classes.}}{39}{table.caption.21}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Testing metrics results for classifying the 11 classes.}}{40}{table.caption.22}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Testing metrics results for classifying the 12 classes.}}{40}{table.caption.23}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Detailed testing metrics for classifying anomaly and no anomaly classes.}}{40}{table.caption.24}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Detailed testing metrics for classifying 11 classes.}}{41}{table.caption.25}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces Detailed testing metrics for classifying 12 classes.}}{41}{table.caption.26}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces Comparison of CNN and Vision Transformer with previous models for the same dataset.}}{42}{table.caption.27}%
+\contentsline {table}{\numberline {5.8}{\ignorespaces Training Time and Computational Requirements}}{42}{table.caption.28}%
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Common Misclassification Patterns}}{47}{table.caption.29}%
 \addvspace {10\p@ }

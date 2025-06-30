@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.25)  30 JUN 2025 22:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.25)  1 JUL 2025 00:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -181,20 +181,29 @@ Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
 \c@LT@tables=\count306
 \c@LT@chunks=\count307
 \LT@p@ftn=\toks25
+) (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
+\col@sep=\dimen187
+\ar@mcellbox=\box61
+\extrarowheight=\dimen188
+\NC@list=\toks26
+\extratabsurround=\skip83
+\backup@length=\skip84
+\ar@cellbox=\box62
 ) (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/06/16 v2.17y AMS math features
-\@mathmargin=\skip83
+\@mathmargin=\skip85
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
  (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks26
-\ex@=\dimen187
+\@emptytoks=\toks27
+\ex@=\dimen189
 )) (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen188
+\pmbraise@=\dimen190
 ) (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
@@ -209,13 +218,13 @@ LaTeX Info: Redefining \colon on input line 409.
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box61
-\strutbox@=\box62
+\Mathstrutbox@=\box63
+\strutbox@=\box64
 LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen189
+\big@size=\dimen191
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
 \macc@depth=\count313
@@ -228,21 +237,21 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \dotsspace@=\muskip17
 \c@parentequation=\count315
 \dspbrk@lvl=\count316
-\tag@help=\toks27
+\tag@help=\toks28
 \row@=\count317
 \column@=\count318
 \maxfields@=\count319
-\andhelp@=\toks28
-\eqnshift@=\dimen190
-\alignsep@=\dimen191
-\tagshift@=\dimen192
-\tagwidth@=\dimen193
-\totwidth@=\dimen194
-\lineht@=\dimen195
-\@envbody=\toks29
-\multlinegap=\skip84
-\multlinetaggap=\skip85
-\mathdisplay@stack=\toks30
+\andhelp@=\toks29
+\eqnshift@=\dimen192
+\alignsep@=\dimen193
+\tagshift@=\dimen194
+\tagwidth@=\dimen195
+\totwidth@=\dimen196
+\lineht@=\dimen197
+\@envbody=\toks30
+\multlinegap=\skip86
+\multlinetaggap=\skip87
+\mathdisplay@stack=\toks31
 LaTeX Info: Redefining \[ on input line 2949.
 LaTeX Info: Redefining \] on input line 2950.
 ) (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
@@ -260,28 +269,28 @@ Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
 \calc@Acount=\count320
 \calc@Bcount=\count321
-\calc@Adimen=\dimen196
-\calc@Bdimen=\dimen197
-\calc@Askip=\skip86
-\calc@Bskip=\skip87
+\calc@Adimen=\dimen198
+\calc@Bdimen=\dimen199
+\calc@Askip=\skip88
+\calc@Bskip=\skip89
 LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
 \calc@Ccount=\count322
-\calc@Cskip=\skip88
+\calc@Cskip=\skip90
 ) (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
 \g_MT_multlinerow_int=\count323
-\l_MT_multwidth_dim=\dimen198
-\origjot=\skip89
-\l_MT_shortvdotswithinadjustabove_dim=\dimen199
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen256
-\l_MT_above_intertext_sep=\dimen257
-\l_MT_below_intertext_sep=\dimen258
-\l_MT_above_shortintertext_sep=\dimen259
-\l_MT_below_shortintertext_sep=\dimen260
-\xmathstrut@box=\box63
-\xmathstrut@dim=\dimen261
+\l_MT_multwidth_dim=\dimen256
+\origjot=\skip91
+\l_MT_shortvdotswithinadjustabove_dim=\dimen257
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen258
+\l_MT_above_intertext_sep=\dimen259
+\l_MT_below_intertext_sep=\dimen260
+\l_MT_above_shortintertext_sep=\dimen261
+\l_MT_below_shortintertext_sep=\dimen262
+\xmathstrut@box=\box65
+\xmathstrut@dim=\dimen263
 ) (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
 Package: bm 2023/12/19 v1.2f Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
@@ -303,9 +312,9 @@ Package: siunitx 2025-05-22 v3.4.12 A comprehensive (SI) units package
 \l__siunitx_number_group_first_int=\count331
 \l__siunitx_number_group_size_int=\count332
 \l__siunitx_number_group_minimum_int=\count333
-\l__siunitx_angle_tmp_dim=\dimen262
-\l__siunitx_angle_marker_box=\box64
-\l__siunitx_angle_unit_box=\box65
+\l__siunitx_angle_tmp_dim=\dimen264
+\l__siunitx_angle_marker_box=\box66
+\l__siunitx_angle_unit_box=\box67
 \l__siunitx_compound_count_int=\count334
  (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/latex/translations\translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
@@ -323,29 +332,20 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 ))
-\l__siunitx_table_tmp_box=\box66
-\l__siunitx_table_tmp_dim=\dimen263
-\l__siunitx_table_column_width_dim=\dimen264
-\l__siunitx_table_integer_box=\box67
-\l__siunitx_table_decimal_box=\box68
-\l__siunitx_table_uncert_box=\box69
-\l__siunitx_table_before_box=\box70
-\l__siunitx_table_after_box=\box71
-\l__siunitx_table_before_dim=\dimen265
-\l__siunitx_table_carry_dim=\dimen266
+\l__siunitx_table_tmp_box=\box68
+\l__siunitx_table_tmp_dim=\dimen265
+\l__siunitx_table_column_width_dim=\dimen266
+\l__siunitx_table_integer_box=\box69
+\l__siunitx_table_decimal_box=\box70
+\l__siunitx_table_uncert_box=\box71
+\l__siunitx_table_before_box=\box72
+\l__siunitx_table_after_box=\box73
+\l__siunitx_table_before_dim=\dimen267
+\l__siunitx_table_carry_dim=\dimen268
 \l__siunitx_unit_tmp_int=\count336
 \l__siunitx_unit_position_int=\count337
 \l__siunitx_unit_total_int=\count338
- (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
-Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
-\col@sep=\dimen267
-\ar@mcellbox=\box72
-\extrarowheight=\dimen268
-\NC@list=\toks31
-\extratabsurround=\skip90
-\backup@length=\skip91
-\ar@cellbox=\box73
-)) (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+) (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
 \pgfutil@everybye=\toks32
 \pgfutil@tempdima=\dimen269
 \pgfutil@tempdimb=\dimen270
@@ -592,10 +592,10 @@ File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty
-(C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
+) (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
- (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex
+
+(C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex
 \t@pgfplots@toka=\toks44
 \t@pgfplots@tokb=\toks45
 \t@pgfplots@tokc=\toks46
@@ -1006,31 +1006,31 @@ Grid set 16 x 16 = 37.34424pt x 52.81541pt
 \TP@tbargs=\toks51
 TextBlockOrigin set to 0pt x 0pt
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 78.
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 88.
+Package hyperref Info: Option `colorlinks' set `true' on input line 79.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 89.
 \@quotelevel=\count505
 \@quotereset=\count506
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1096,7 +1096,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 )) (C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 88.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 89.
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
@@ -1113,9 +1113,9 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 88.
-Package biblatex Info: Reference segment=0 on input line 88.
-Package hyperref Info: Link coloring ON on input line 88.
+Package biblatex Info: Reference section=0 on input line 89.
+Package biblatex Info: Reference segment=0 on input line 89.
+Package hyperref Info: Link coloring ON on input line 89.
  (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -1176,7 +1176,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--139
 
  []
 
-<Figures/NTNU Main Logo.png, id=372, 668.0458pt x 234.42581pt>
+<Figures/NTNU Main Logo.png, id=416, 668.0458pt x 234.42581pt>
 File: Figures/NTNU Main Logo.png Graphic file (type png)
 <use Figures/NTNU Main Logo.png>
 Package pdftex.def Info: Figures/NTNU Main Logo.png  used on input line 141.
@@ -1228,7 +1228,12 @@ l.146     \myemptypage
 
 [7
 
-] (main.lot)
+] (main.lot
+Overfull \hbox (8.13147pt too wide) in paragraph at lines 15--15
+ [][] [][][]\T1/cmr/m/n/12 Hyperparameters for Vi-sion Trans-former Mod-els (ViT-B32 and DeiT- 
+ []
+
+)
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
@@ -1280,38 +1285,185 @@ Chapter 2.
 [6]
 
 [7]
+Overfull \hbox (5.79214pt too wide) in paragraph at lines 126--144
+ [][] 
+ []
+
+
 
 [8]
 
 [9]
 
 [10]
-
-[11])
-
-[12]
-Chapter 3.
-(Chapters/Ch3Theoratical Background.tex)
-
-[13
+Overfull \hbox (28.6926pt too wide) in paragraph at lines 252--262
+ [][] 
+ []
 
 
-]
+
+[11]
+
+[12])
+
+[13]
 
 [14
 
 ]
-Chapter 4.
-(Chapters/Ch4Methodology.tex
+Chapter 3.
+(Chapters/Ch3Theoratical Background.tex
 
 [15
 
-]
+])
 
 [16]
 
 [17]
-Overfull \hbox (4.99657pt too wide) in paragraph at lines 202--215
+
+[18
+
+]
+Chapter 4.
+(Chapters/Ch4Methodology.tex
+<Figures/Solar PV/Original Dataset/image25_inferno.png, id=716, 281.3712pt x 459.3963pt>
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 24.
+(pdftex.def)             Requested size: 22.76228pt x 37.15901pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 26.
+(pdftex.def)             Requested size: 22.76228pt x 37.15901pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 28.
+(pdftex.def)             Requested size: 22.76228pt x 37.15901pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 30.
+(pdftex.def)             Requested size: 22.76228pt x 37.15901pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 32.
+(pdftex.def)             Requested size: 22.76228pt x 37.15901pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 34.
+(pdftex.def)             Requested size: 22.76228pt x 37.15901pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 36.
+(pdftex.def)             Requested size: 22.76228pt x 37.15901pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 38.
+(pdftex.def)             Requested size: 22.76228pt x 37.15901pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 40.
+(pdftex.def)             Requested size: 22.76228pt x 37.15901pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 42.
+(pdftex.def)             Requested size: 22.76228pt x 37.15901pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 44.
+(pdftex.def)             Requested size: 22.76228pt x 37.15901pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 46.
+(pdftex.def)             Requested size: 22.76228pt x 37.15901pt.
+
+Overfull \hbox (85.11789pt too wide) in paragraph at lines 20--49
+ [][] 
+ []
+
+
+
+[19
+
+]
+
+[20 <./Figures/Solar PV/Original Dataset/image25_inferno.png>]
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 87.
+(pdftex.def)             Requested size: 104.20822pt x 170.1422pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 130.
+(pdftex.def)             Requested size: 33.34738pt x 54.44522pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 131.
+(pdftex.def)             Requested size: 33.34738pt x 54.44522pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 132.
+(pdftex.def)             Requested size: 33.34738pt x 54.44522pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 133.
+(pdftex.def)             Requested size: 33.34738pt x 54.44522pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 134.
+(pdftex.def)             Requested size: 33.34738pt x 54.44522pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 135.
+(pdftex.def)             Requested size: 33.34738pt x 54.44522pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 136.
+(pdftex.def)             Requested size: 33.34738pt x 54.44522pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 137.
+(pdftex.def)             Requested size: 33.34738pt x 54.44522pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 138.
+(pdftex.def)             Requested size: 33.34738pt x 54.44522pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 139.
+(pdftex.def)             Requested size: 33.34738pt x 54.44522pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 140.
+(pdftex.def)             Requested size: 33.34738pt x 54.44522pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 141.
+(pdftex.def)             Requested size: 33.34738pt x 54.44522pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 142.
+(pdftex.def)             Requested size: 33.34738pt x 54.44522pt.
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 143.
+(pdftex.def)             Requested size: 33.34738pt x 54.44522pt.
+
+
+[21] [22]
+
+[23]
+Overfull \hbox (60.1871pt too wide) in paragraph at lines 216--229
+ [][] 
+ []
+
+
+Underfull \vbox (badness 2343) has occurred while \output is active []
+
+
+
+[24]
+Overfull \hbox (4.99657pt too wide) in paragraph at lines 265--278
  [][] 
  []
 
@@ -1319,92 +1471,133 @@ Overfull \hbox (4.99657pt too wide) in paragraph at lines 202--215
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+Underfull \vbox (badness 1688) has occurred while \output is active []
 
-[18]
 
-[19]
 
-[20]
+[25]
+File: Figures/Solar PV/Original Dataset/image25_inferno.png Graphic file (type png)
+<use Figures/Solar PV/Original Dataset/image25_inferno.png>
+Package pdftex.def Info: Figures/Solar PV/Original Dataset/image25_inferno.png  used on input line 312.
+(pdftex.def)             Requested size: 208.41644pt x 340.29141pt.
 
-[21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[22]
 
-[23]
-Underfull \hbox (badness 1062) in paragraph at lines 542--543
+
+[26]
+
+[27]
+Underfull \vbox (badness 2351) has occurred while \output is active []
+
+
+
+[28]
+
+[29]
+
+[30]
+Overfull \hbox (75.21419pt too wide) in paragraph at lines 514--549
+ [][] 
+ []
+
+
+
+[31]
+
+[32]
+Underfull \hbox (badness 1062) in paragraph at lines 685--686
 [] []|\T1/cmr/bx/n/12 4.5.3.2.7 Dis-til-la-tion To-ken In-ter-ac-tion[] \T1/cmr/m/n/12 The dis-til-la-tion to-ken learns
  []
 
 
 
-[24]
+[33]
 
-[25]
+[34]
 
-[26]
+[35]
 
-[27])
+[36])
 
-[28]
+[37]
+
+[38
+
+]
 Chapter 5.
 (Chapters/Ch5Results.tex
 
-[29
-
+[39
 
 ]
 
-[30]
+[40]
 
-[31]
+[41]
 Overfull \hbox (27.23495pt too wide) in paragraph at lines 179--197
  [][] 
  []
 
-)
 
-[32]
+
+[42])
+
+[43]
+
+[44
+
+]
 Chapter 6.
 (Chapters/Ch6Discussion.tex
 
-[33
-
+[45
 
 ]
+Overfull \hbox (18.16971pt too wide) in paragraph at lines 60--72
+ [][] 
+ []
 
-[34]
 
-[35])
 
-[36]
+[46]
+
+[47]
+
+[48])
+
+[49]
+
+[50
+
+]
 Chapter 7.
 (Chapters/Ch7Conclusion.tex
 
-[37
+[51
+
+]
+
+[52]
+
+[53])
+
+[54]
+
+[55
+
 
 
 ]
 
-[38]
+[56] (Chapters/Ch8Appendix.tex
 
-[39])
-
-[40]
-
-[41
-
-
-
-]
-
-[42] (Chapters/Ch8Appendix.tex
-
-[43
+[57
 
 
 ])
 
-[44
+[58
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -1445,7 +1638,7 @@ Package pdftex.def Info: Figures/NTNU Main Logo.png  used on input line 268.
 (pdftex.def)             Requested size: 209.1314pt x 73.38666pt.
 
 
-[45
+[59
 
 
 ] (main.aux)
@@ -1454,23 +1647,23 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5B00CE2A6820430517E6DB609BE19D42;15535.
+(rerunfilecheck)             Checksum: F787BF07E37AFD79FFF9D6BE715D6C7C;18052.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49879 strings out of 468219
- 1175704 string characters out of 5431901
- 2054124 words of memory out of 5000000
- 77467 multiletter control sequences out of 15000+600000
+ 49969 strings out of 468219
+ 1177539 string characters out of 5431901
+ 2055498 words of memory out of 5000000
+ 77517 multiletter control sequences out of 15000+600000
  652134 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,91p,801b,2080s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\zeshanm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\zeshanm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\zeshanm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\zeshanm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\zeshanm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0800.pk> <C:\Users\zeshanm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\zeshanm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1200.pk> <C:\Users\zeshanm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\zeshanm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\zeshanm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1200.pk> <C:\Users\zeshanm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\zeshanm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\zeshanm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\zeshanm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\zeshanm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\zeshanm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\zeshanm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1095.pk> <C:\Users\zeshanm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1728.pk><C:/Users/zeshanm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/zeshanm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/zeshanm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/zeshanm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/zeshanm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/zeshanm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/zeshanm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/zeshanm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/zeshanm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/zeshanm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (58 pages, 632340 bytes).
+Output written on main.pdf (72 pages, 715261 bytes).
 PDF statistics:
- 1499 PDF objects out of 1728 (max. 8388607)
- 211 named destinations out of 1000 (max. 500000)
- 754 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1665 PDF objects out of 1728 (max. 8388607)
+ 251 named destinations out of 1000 (max. 500000)
+ 847 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,15 +1,21 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'main.blg'
-[86] biber-MSWIN64:340> INFO - === 
-[122] Biber.pm:420> INFO - Reading 'main.bcf'
-[210] Biber.pm:994> INFO - Found 10 citekeys in bib section 0
-[220] Biber.pm:4463> INFO - Processing section 0
-[229] Biber.pm:4654> INFO - Looking for bibtex file 'bibliography.bib' for section 0
-[279] bibtex.pm:1713> INFO - LaTeX decoding ...
-[292] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
-[362] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[362] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[363] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
-[364] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
-[372] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[379] bbl.pm:779> INFO - Output to main.bbl
+[100] biber-MSWIN64:340> INFO - === 
+[137] Biber.pm:420> INFO - Reading 'main.bcf'
+[229] Biber.pm:994> INFO - Found 10 citekeys in bib section 0
+[239] Biber.pm:4463> INFO - Processing section 0
+[248] Biber.pm:4654> INFO - Looking for bibtex file 'bibliography.bib' for section 0
+[302] bibtex.pm:1713> INFO - LaTeX decoding ...
+[319] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
+[389] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[390] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[391] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[391] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[400] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[407] bbl.pm:779> INFO - Output to main.bbl
+[408] Biber.pm:131> WARN - Duplicate entry key: 'Shazeer2017' in file 'bibliography.bib', skipping ...
+[408] Biber.pm:131> WARN - Duplicate entry key: 'Shazeer2017' in file 'bibliography.bib', skipping ...
+[408] Biber.pm:131> WARN - Duplicate entry key: 'Shazeer2017' in file 'bibliography.bib', skipping ...
+[408] Biber.pm:131> WARN - Duplicate entry key: 'iea2024outlook' in file 'bibliography.bib', skipping ...
+[408] Biber.pm:131> WARN - Duplicate entry key: 'iea2024renewable' in file 'bibliography.bib', skipping ...
+[408] Biber.pm:133> INFO - WARNINGS: 5
