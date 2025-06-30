@@ -94,71 +94,6 @@
       \verb https://arxiv.org/abs/1706.03762
       \endverb
     \endentry
-    \entry{Shazeer2017}{article}{}{}
-      \name{author}{7}{}{%
-        {{hash=62efade83d70f0323fe248755e6c90c5}{%
-           family={Shazeer},
-           familyi={S\bibinitperiod},
-           given={Noam},
-           giveni={N\bibinitperiod}}}%
-        {{hash=fbd2f0ec383a2ff63d89cf287c3a4ddb}{%
-           family={Mirhoseini},
-           familyi={M\bibinitperiod},
-           given={Azalia},
-           giveni={A\bibinitperiod}}}%
-        {{hash=56dbc29234e98e45e516da1b654e12d8}{%
-           family={Maziarz},
-           familyi={M\bibinitperiod},
-           given={Krzysztof},
-           giveni={K\bibinitperiod}}}%
-        {{hash=a4c859221cc41e2db6d63b486f955ba2}{%
-           family={Davis},
-           familyi={D\bibinitperiod},
-           given={Andy},
-           giveni={A\bibinitperiod}}}%
-        {{hash=841a83a4bb5e622d6e1bde4818879016}{%
-           family={Le},
-           familyi={L\bibinitperiod},
-           given={Quoc},
-           giveni={Q\bibinitperiod}}}%
-        {{hash=9a8750ccdb2a4cf14d2655face1ce016}{%
-           family={Hinton},
-           familyi={H\bibinitperiod},
-           given={Geoffrey},
-           giveni={G\bibinitperiod}}}%
-        {{hash=62f954323339abeba6c6a240e9d2855b}{%
-           family={Dean},
-           familyi={D\bibinitperiod},
-           given={Jeff},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {International Conference on Learning Representations, ICLR}%
-      }
-      \strng{namehash}{f2263f5195ccd4c96d22a9ca9afe302e}
-      \strng{fullhash}{b0a7ca8ce484901810e2eb8711f62dbb}
-      \strng{fullhashraw}{b0a7ca8ce484901810e2eb8711f62dbb}
-      \strng{bibnamehash}{b0a7ca8ce484901810e2eb8711f62dbb}
-      \strng{authorbibnamehash}{b0a7ca8ce484901810e2eb8711f62dbb}
-      \strng{authornamehash}{f2263f5195ccd4c96d22a9ca9afe302e}
-      \strng{authorfullhash}{b0a7ca8ce484901810e2eb8711f62dbb}
-      \strng{authorfullhashraw}{b0a7ca8ce484901810e2eb8711f62dbb}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The capacity of a neural network to absorb information is limited by its number of parameters. Conditional computation, where parts of the network are active on a per-example basis, has been proposed in theory as a way of dramatically increasing model capacity without a proportional increase in computation. In practice, however, there are significant algorithmic and performance challenges. In this work, we address these challenges and finally realize the promise of conditional computation, achieving greater than 1000x improvements in model capacity with only minor losses in computational efficiency on modern GPU clusters. We introduce a Sparsely-Gated Mixture-of-Experts layer (MoE), consisting of up to thousands of feed-forward sub-networks. A trainable gating network determines a sparse combination of these experts to use for each example. We apply the MoE to the tasks of language modeling and machine translation, where model capacity is critical for absorbing the vast quantities of knowledge available in the training corpora. We present model architectures in which a MoE with up to 137 billion parameters is applied convolutionally between stacked LSTM layers. On large language modeling and machine translation benchmarks, these models achieve significantly better results than state-of-the-art at lower computational cost.}
-      \field{journaltitle}{5th International Conference on Learning Representations, ICLR 2017 - Conference Track Proceedings}
-      \field{month}{1}
-      \field{title}{Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer}
-      \field{year}{2017}
-      \verb{urlraw}
-      \verb https://arxiv.org/pdf/1701.06538
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/pdf/1701.06538
-      \endverb
-    \endentry
     \entry{ibrahim2022machine}{article}{}{}
       \name{author}{4}{}{%
         {{hash=43be3adae8fa23cea815254ea23b4c18}{%
@@ -193,8 +128,8 @@
       \strng{authornamehash}{404cb980b2c106cd1c19537a953e814a}
       \strng{authorfullhash}{49d416e3c726df9504fefc9268926267}
       \strng{authorfullhashraw}{49d416e3c726df9504fefc9268926267}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Energies}
@@ -224,8 +159,8 @@
       \strng{authornamehash}{06d48442ae9aeb26fe4dfa871ff311a3}
       \strng{authorfullhash}{06d48442ae9aeb26fe4dfa871ff311a3}
       \strng{authorfullhashraw}{06d48442ae9aeb26fe4dfa871ff311a3}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2010 35th IEEE Photovoltaic Specialists Conference}
@@ -263,8 +198,8 @@
       \strng{authornamehash}{1ee22eb79502d9a4e869ba5ae5f2430a}
       \strng{authorfullhash}{7282c4b61a86f2d4f5a9b649875167a3}
       \strng{authorfullhashraw}{7282c4b61a86f2d4f5a9b649875167a3}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0196-8904}
@@ -349,8 +284,8 @@
       \strng{authornamehash}{d96316bc7578db680aba71d4226354c8}
       \strng{authorfullhash}{e2f7b82b6bcaba0b27eef166b225c54a}
       \strng{authorfullhashraw}{e2f7b82b6bcaba0b27eef166b225c54a}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Conference on Learning Representations (ICLR)}
@@ -394,8 +329,8 @@
       \strng{authornamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
       \strng{authorfullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
       \strng{authorfullhashraw}{42c4b52dc3a62cebabbc11c73e1afb53}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
