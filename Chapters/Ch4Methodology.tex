@@ -17,11 +17,11 @@ type of anomaly present, such as hot spots, cracks, and soiling etc.
 % Start a Table for the dataset
 \begin{table}[htbp]
     \centering
-    \begin{tabular}{|p{3cm}|c|p{5cm}|}
+    \begin{tabular}{|l|c|>{\raggedright\arraybackslash}p{7cm}|}
         \hline
-        \textbf{Class} & \textbf{No. of Images} & \textbf{Description}                                                      \\
+        \textbf{Class} & \textbf{No. of Images} & \textbf{Description} \\
         \hline
-        Cell           & 1,877                  & Hot spot occurring with square geometry in a single cell.                 \\
+        Cell           & 1,877                  & Hot spot occurring with square geometry in a single cell.                \\
         \hline
         Cell-Multi     & 1,288                  & Hot spots occurring with square geometry in multiple cells.               \\
         \hline
@@ -49,12 +49,11 @@ type of anomaly present, such as hot spots, cracks, and soiling etc.
 
     \caption{Overview of the IR Dataset}
 
-    % Add a Figure for the Dataset dsistribution
+    % Add a Figure for the Dataset distribution
     \label{tab:dataset_overview}
 \end{table}
 
-
-It is important to note that from radar chart \ref{fig:dataset_distribution}, the
+It is important to note that the
 dataset contains 10,000 images of nominal solar modules and 10,000 images of 11 different
 types of anomalies, resulting in a total of 20,000 images. The dataset is perfectly
 balanced for 2 class classification (Anomaly vs No-Anomaly), with each class
@@ -63,10 +62,15 @@ dataset is imbalanced, with some classes having significantly more images than o
 This imbalance can affect the performance of machine learning models, as they may
 become biased towards the majority class. Therefore, it is important to consider
 techniques such as data augmentation or resampling to address this issue during model
-training and evaluation. For this data preproceessing and augmentation techniques
+training and evaluation. For this data preprocessing and augmentation techniques
 were applied to balance the classes for 11 class and 12 class
-\cite{ibrahim2022machine} classification tasks which| are discussed in the
+\cite{ibrahim2022machine} classification tasks which are discussed in the
 following sections.
+
+\subsection{Class Descriptions}
+
+The dataset comprises 12 distinct classes, each representing different conditions
+or anomalies that can occur in solar panel systems:
 
 \begin{itemize}
     \item \textbf{Cell} - Hot spot occurring with square geometry in a single
@@ -99,23 +103,18 @@ following sections.
     \item \textbf{No-Anomaly} - Nominal solar module.
 \end{itemize}
 
-\subsection{Data Preprocessing}
+\section{Data Preprocessing and Augmentation}
 
 Data preprocessing is a crucial step in machine learning and deep learning
 pipelines. It involves transforming raw data into a format that is suitable for training
-models.
-
-This process may include tasks such as data cleaning, normalization, feature extraction,
+models. This process may include tasks such as data cleaning, normalization, feature extraction,
 and data augmentation. Proper preprocessing helps improve model performance,
 reduces overfitting, and ensures that the data is in a consistent format for training
 and evaluation.
 
-Common techniques include scaling numerical features, handling missing values, and
-encoding categorical variables.
+\subsection{Image Preprocessing Techniques}
 
-\section{Image Filter}
-
-\subsection{Histogram Equalization}
+\subsubsection{Histogram Equalization}
 
 Histogram equalization is a technique used to enhance the contrast of images by redistributing
 the intensity values across the entire range of possible values. This process
@@ -129,41 +128,15 @@ Histogram equalization is particularly useful in applications such as medical
 imaging, remote sensing, and computer vision, where it helps improve the quality
 of images for further analysis and interpretation.\cite{deline2010partially}
 
-%Add Mathematical equations for CLAHE
-\subsection{Image Resizing}
+\subsubsection{Image Resizing}
 
-\subsection{Data Augmentation}
+All images in the dataset were resized to a consistent resolution of 160×160 pixels
+to ensure uniformity across the training data. This standardization is essential
+for batch processing and maintaining consistent input dimensions for the neural
+network architectures.
 
-Data augmentation is a technique used to artificially increase the size of a
-dataset by creating modified versions of existing data. This is particularly useful
-in scenarios where collecting new data is expensive or time-consuming. Data
-augmentation can involve various transformations such as rotation, scaling,
-flipping, and cropping for images, or adding noise and changing pitch for data. By
-introducing variability in the training data, augmentation helps improve model
-generalization and robustness, reducing the risk of overfitting to the training set.
-It is widely used in computer vision tasks, but can also be applied to other domains
-like natural language processing and speech recognition.\cite{deline2010partially}
+\subsubsection{Data Normalization}
 
-\subsection{Offline Data Augmentation}
-Offline data augmentation refers to the process of applying transformations to
-the training data before the training process begins. These augmented versions are
-precomputed and stored, effectively increasing the size of the training dataset.
-This approach is useful when computational resources during training are limited
-or when the augmentation transformations are computationally expensive.
-
-\subsection{Online Data Augmentation}
-Online data augmentation is a technique where data transformations are applied to
-the training data in real-time during the training process. This approach allows
-for dynamic generation of augmented data on-the-fly, rather than precomputing and
-storing augmented versions of the dataset. Online data augmentation is
-particularly useful in scenarios where the dataset is large or when
-computational resources are limited, as it reduces the need for additional storage
-space. It can include techniques such as random cropping, rotation, flipping, and
-color jittering, which are applied to each batch of data as it is fed into the
-model during training.
-
-% Add Table for the data augmentation techniques used
-\subsection{Data Normalization}
 Data normalization is a preprocessing technique used to scale numerical features
 to a common range, typically between 0 and 1 or -1 and 1. This is important in
 machine learning and deep learning because it helps improve the convergence of
@@ -174,30 +147,50 @@ scaling. The choice of normalization technique depends on the specific dataset a
 the characteristics of the features involved. Proper normalization ensures that
 the model learns effectively and can generalize well to unseen data.
 
+\subsection{Data Augmentation Strategies}
+
+Data augmentation is a technique used to artificially increase the size of a
+dataset by creating modified versions of existing data. This is particularly useful
+in scenarios where collecting new data is expensive or time-consuming. Data
+augmentation can involve various transformations such as rotation, scaling,
+flipping, and cropping for images, or adding noise and changing pitch for audio data. By
+introducing variability in the training data, augmentation helps improve model
+generalization and robustness, reducing the risk of overfitting to the training set.
+It is widely used in computer vision tasks, but can also be applied to other domains
+like natural language processing and speech recognition.\cite{deline2010partially}
+
+\subsubsection{Offline Data Augmentation}
+
+Offline data augmentation refers to the process of applying transformations to
+the training data before the training process begins. These augmented versions are
+precomputed and stored, effectively increasing the size of the training dataset.
+This approach is useful when computational resources during training are limited
+or when the augmentation transformations are computationally expensive.
+
+\subsubsection{Online Data Augmentation}
+
+Online data augmentation is a technique where data transformations are applied to
+the training data in real-time during the training process. This approach allows
+for dynamic generation of augmented data on-the-fly, rather than precomputing and
+storing augmented versions of the dataset. Online data augmentation is
+particularly useful in scenarios where the dataset is large or when
+computational resources are limited, as it reduces the need for additional storage
+space. It can include techniques such as random cropping, rotation, flipping, and
+color jittering, which are applied to each batch of data as it is fed into the
+model during training.
+
 \subsection{Data Splitting}
-According to, the dataset is split into three parts: training, validation, and
-test sets. The training set is used to train the model, the validation set is
-used to tune hyperparameters and prevent overfitting, and the test set is used to
-evaluate the final model's performance. A common split ratio is 70\% for training,
-15\% for validation, and 15\% for testing, but this can vary depending on the
-dataset size and specific requirements of the task.
 
-\subsection{Hardware and Software Specifications}
-\section{Libraties and Frameworks}
+The dataset is split into three parts: training, validation, and test sets. The
+training set is used to train the model, the validation set is used to tune
+hyperparameters and prevent overfitting, and the test set is used to evaluate the
+final model's performance. A common split ratio is 70\% for training, 15\% for
+validation, and 15\% for testing, but this can vary depending on the dataset size
+and specific requirements of the task.
 
-Pillow is a Python Imaging Library (PIL) fork that provides easy-to-use image processing
-\cite{JeffreyKuo2023AutomaticImaging} capabilities. It supports opening, manipulating,
-and saving various image \cite{vaswani2017attention} formats, including JPEG,
-PNG, and BMP. Pillow allows for operations such as resizing, cropping, rotating,
-and filtering images, making it a versatile tool for image processing tasks. It also
-supports advanced features like image enhancement, drawing text and shapes, and converting
-between different color spaces. Pillow is widely used in computer vision
-applications, web development, and data preprocessing tasks where image
-manipulation is required.
+\section{Hardware and Software Infrastructure}
 
-Pytorch:
-
-Pillow: Pillow is a Python Imaging Library (PIL) fork that provides easy-to-use image
+\subsection{Hardware Specifications}
 
 The experiments in this research were conducted using the hardware
 specifications as described in the table below.
@@ -215,12 +208,38 @@ specifications as described in the table below.
         \hline
         Graphics Card       & NVIDIA GeForce RTX 3060 Laptop GPU (4GB VRAM)                                                       \\
         \hline
-        Integrated Graphics & Intel\textsuperscript{\textregistered} Iris\textsuperscript{\textregistered} Xe Graphics (2GB VRAM) \\
+        Integrated Graphics & Intel\textsuperscript{\textregistered} Iris\textsuperscript{\textregistered} Xe Graphics\\
+                            & (2GB VRAM) \\
         \hline
     \end{tabular}
 \end{table}
 
-\section{Transfer Learning}
+\subsection{Libraries and Frameworks}
+
+\subsubsection{PyTorch}
+
+PyTorch is a popular open-source machine learning framework that provides a flexible
+and intuitive platform for building and training deep learning models. It offers
+dynamic computational graphs, making it easier to debug and experiment with different
+architectures. PyTorch is widely used in research and industry applications for
+computer vision, natural language processing, and other AI tasks.
+
+\subsubsection{Pillow}
+
+Pillow is a Python Imaging Library (PIL) fork that provides easy-to-use image processing
+\cite{JeffreyKuo2023AutomaticImaging} capabilities. It supports opening, manipulating,
+and saving various image \cite{vaswani2017attention} formats, including JPEG,
+PNG, and BMP. Pillow allows for operations such as resizing, cropping, rotating,
+and filtering images, making it a versatile tool for image processing tasks. It also
+supports advanced features like image enhancement, drawing text and shapes, and converting
+between different color spaces. Pillow is widely used in computer vision
+applications, web development, and data preprocessing tasks where image
+manipulation is required.
+
+\section{Deep Learning Approaches}
+
+\subsection{Transfer Learning}
+
 Transfer learning is a technique in machine learning where a model developed for
 one task is reused as the starting point for a model on a second task. In the
 context of deep learning for anomaly detection in floating solar PVs, transfer learning
@@ -235,7 +254,8 @@ features from millions of images, the model can better recognize patterns
 relevant to identifying defects in solar panels, even with a relatively small dataset
 of solar panel images.
 
-\section{Fine Tuning}
+\subsection{Fine Tuning}
+
 Fine tuning is the process of taking a pre-trained model and further training it
 on a specific dataset to adapt it to a particular task. For the anomaly
 detection task in floating solar PVs, the pre-trained CNN and Vision Transformer
@@ -262,10 +282,12 @@ panel anomalies.
 
 This section presents the deep learning architectures employed for anomaly
 detection in floating solar PV systems. We explore several approaches including Convolutional
-Neural Networks (CNNs), Vision Transformers (ViTs), and (DeiT) Data-efficient Image
-Transformer architectures.
+Neural Networks (CNNs), Vision Transformers (ViTs), and Data-efficient Image
+Transformer (DeiT) architectures.
 
 \subsection{CNN Models}
+
+[Content for CNN models should be added here]
 
 \subsection{Vision Transformer (ViT)}
 
@@ -273,8 +295,11 @@ Vision Transformer (ViT) is a type of neural network architecture that applies t
 principles of transformers, originally designed for natural language processing,
 to computer vision tasks~\cite{dosovitskiy2020image}. The key idea is to treat an image as a sequence of
 patches, similar to how words are treated in text. This allows the model to
-capture long-range dependencies and relationships within the image data. The ViT
-architecture consists of the following main components:
+capture long-range dependencies and relationships within the image data.
+
+\subsubsection{ViT Architecture Components}
+
+The ViT architecture consists of the following main components:
 
 \begin{itemize}
     \item \textbf{Input Image:} The input to the ViT is an image, which is typically
@@ -320,6 +345,10 @@ architecture consists of the following main components:
         Anomalies).
 \end{itemize}
 
+\subsubsection{Mathematical Formulation}
+
+The attention mechanism in ViT is computed as:
+
 \begin{equation}
     \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^{T}}{\sqrt{d_{k}}}\right
     )V \label{eqn:attention}
@@ -353,6 +382,8 @@ mathematically represented as follows:
     \text{MHSA}(X) = \text{Concat}(\text{head }_{1}, \text{head}_{2}, \ldots, \text{head}
     _{h})W^{O}
 \end{equation}
+
+\subsubsection{ViT Hyperparameters}
 
 \begin{table}[htbp]
     \centering
@@ -391,22 +422,40 @@ mathematically represented as follows:
         Early Stopping Patience          & 10                                \\
         \hline
     \end{tabular}
-    \caption{Hyperparameters for Transformer-Based Models}
-    \label{tab:hyperparameters}
+    \caption{Hyperparameters for Vision Transformer Model}
+    \label{tab:vit_hyperparameters}
 \end{table}
 
-\section{DeiT - Data-efficient Image Transformer}
+\subsection{DeiT - Data-efficient Image Transformer}
 
-% Can you also write in detail about DeiT?
 DeiT (Data-efficient Image Transformer) is a variant of the Vision Transformer (ViT)
 architecture that focuses on improving the data efficiency of training
 transformers for image classification tasks. It introduces several key innovations
 to enhance the performance of transformers on image data, particularly when
-training on smaller datasets. The main features of DeiT include: Distillation
-Token: DeiT introduces a special token called the distillation token, which is
-used to aggregate information from the entire image. This token is trained to capture
-global context and is particularly useful for improving the model's performance on
-smaller datasets.
+training on smaller datasets.
+
+\subsubsection{Key Features of DeiT}
+
+The main features of DeiT include:
+
+\begin{itemize}
+    \item \textbf{Distillation Token:} DeiT introduces a special token called the 
+        distillation token, which is used to aggregate information from the entire image. 
+        This token is trained to capture global context and is particularly useful for 
+        improving the model's performance on smaller datasets.
+
+    \item \textbf{Knowledge Distillation:} DeiT employs a distillation loss during 
+        training, which encourages the model to learn from a teacher model (often a 
+        pre-trained CNN) to improve its performance. This distillation process helps 
+        the DeiT model to better capture the features and patterns present in the 
+        training data, leading to improved classification accuracy.
+
+    \item \textbf{Data Efficiency:} One of the key advantages of DeiT is its ability 
+        to achieve competitive performance on image classification tasks with 
+        significantly fewer training samples compared to vanilla ViT models. This is 
+        particularly beneficial in scenarios where labeled data is limited, such as 
+        in the case of anomaly detection in floating solar PVs.
+\end{itemize}
 
 Inductive bias is a crucial aspect of machine learning that refers to the assumptions
 made by a model about the underlying data distribution. In the context of DeiT, the
@@ -416,35 +465,21 @@ of the image. This is particularly important for image classification tasks,
 where understanding the overall structure and context of an image is essential
 for accurate classification.
 
-One of the reason to choose DeiT is its ability to achieve competitive
-performance on image classification tasks with significantly fewer training
-samples compared to vanilla ViT models. This is particularly beneficial in scenarios
-where labeled data is limited, such as in the case of anomaly detection in
-floating solar PVs. By leveraging the distillation token and other techniques,
-DeiT can effectively learn from smaller datasets while maintaining high accuracy
-and generalization capabilities.
-
-DeiT employs a distillation loss during training, which encourages the model to learn
-from a teacher model (often a pre-trained CNN) to improve its performance. This
-distillation process helps the DeiT model to better capture the features and
-patterns present in the training data, leading to improved classification accuracy.
-
-\section{Mathematical Foundations of DeiT}
+\subsubsection{Mathematical Foundations of DeiT}
 
 Data-efficient image Transformers (DeiT) extends Vision Transformers (ViT) by
 incorporating knowledge distillation. The following mathematical formulation details
 its architecture and training methodology:
 
-\subsection{Image Patching and Embedding}
+\paragraph{Image Patching and Embedding}
 An input image $x \in \mathbb{R}^{H \times W \times C}$ is divided into $N$ patches:
 \begin{equation}
     x_{p}= \{x_{p}^{1}, x_{p}^{2}, ..., x_{p}^{N}\}, \quad x_{p}^{i}\in \mathbb{R}
     ^{P^2 \cdot C}
 \end{equation}
 where $P$ represents the patch size, and each patch undergoes flattening into a vector.
-% How to control the spacing between two subsections?
 
-\subsection{Patch and Position Embeddings}
+\paragraph{Patch and Position Embeddings}
 The patches are linearly projected to $D$ dimensions and combined with position embeddings:
 \begin{equation}
     z_{0}= [x_{\text{class}}; x_{p}^{1}E; x_{p}^{2}E; ...; x_{p}^{N}E; x_{\text{distill}}
@@ -453,7 +488,7 @@ The patches are linearly projected to $D$ dimensions and combined with position 
 where $E \in \mathbb{R}^{(P^2 \cdot C) \times D}$ denotes the patch embedding
 matrix, and $E_{\text{pos}}$ encodes positional information.
 
-\subsection{Transformer Encoder}
+\paragraph{Transformer Encoder}
 The embedding sequence processes through $L$ transformer blocks:
 \begin{equation}
     z'_{\ell}= \text{MSA}(\text{LN}(z_{\ell-1})) + z_{\ell-1}
@@ -464,8 +499,9 @@ The embedding sequence processes through $L$ transformer blocks:
 where MSA represents multi-head self-attention, LN denotes layer normalization,
 and MLP is a two-layer feed-forward network.
 
-\subsection{Distillation Mechanisms}
-\subsubsection{Hard Distillation Loss}
+\paragraph{Distillation Mechanisms}
+
+\textbf{Hard Distillation Loss:}
 DeiT implements a hard distillation loss comparing student predictions with
 teacher's hard labels:
 \begin{equation}
@@ -474,7 +510,7 @@ teacher's hard labels:
 where CE represents cross-entropy, $y_{s}$ denotes student output, and $y_{t}$ represents
 teacher's hard prediction.
 
-\subsubsection{Soft Distillation Loss}
+\textbf{Soft Distillation Loss:}
 The soft distillation loss utilizing Kullback-Leibler divergence (KL) between student
 and teacher predictions:
 \begin{equation}
@@ -484,7 +520,7 @@ and teacher predictions:
 where $\tau$ represents the temperature parameter, $z_{s}$ and $z_{t}$ are logits
 from student and teacher respectively.
 
-\subsection{Combined Training Objective}
+\paragraph{Combined Training Objective}
 The final loss combines cross-entropy with ground truth ($\mathcal{L}_{\text{CE}}$)
 and distillation losses:
 \begin{equation}
@@ -493,16 +529,16 @@ and distillation losses:
 \end{equation}
 where $\alpha$ and $\beta$ serve as balancing hyperparameters.
 
-\subsection{Attention Mechanism}
+\paragraph{Attention Mechanism}
 For each attention head $h$, attention scores are computed as:
 \begin{equation}
     \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^{T}}{\sqrt{d_{k}}}\right
     )V
 \end{equation}
 where $Q$, $K$, and $V$ represent query, key, and value matrices respectively, and
-£ $d_{k}$ is the dimension of the key vectors.
+$d_{k}$ is the dimension of the key vectors.
 
-\subsection{Distillation Token Interaction}
+\paragraph{Distillation Token Interaction}
 The distillation token learns through attention with other tokens:
 \begin{equation}
     a_{\text{distill}}= \sum_{i=1}^{N}\text{softmax}(\frac{q_{\text{distill}}k_{i}^{T}}{\sqrt{d_{k}}}
@@ -510,7 +546,8 @@ The distillation token learns through attention with other tokens:
 \end{equation}
 where $q_{\text{distill}}$ represents the query from the distillation token.
 
-\subsection{Theoretical Analysis}
+\subsubsection{Theoretical Analysis}
+
 This formulation enables DeiT to efficiently learn from both labeled data and a
 teacher model while maintaining the architectural advantages of Vision
 Transformers. The distillation token functions as a learned student that aggregates
@@ -524,20 +561,24 @@ and distillation tokens can attend to relevant image patches while developing
 complementary representations.
 
 \section{Evaluation Metrics}
+
 Evaluation metrics are essential for assessing the performance of deep learning
 models. They provide quantitative measures to evaluate how well a model performs
 on a given task, such as classification or regression. Common evaluation metrics
-include accuracy, precision, recall, F1-score, and area under the ROC curve (A
-UC-ROC). These metrics help in understanding the strengths and weaknesses of a
+include accuracy, precision, recall, F1-score, and area under the ROC curve (AUC-ROC). 
+These metrics help in understanding the strengths and weaknesses of a
 model, guiding the selection of the best model for a specific task. In the
 context of anomaly detection in floating solar PVs, evaluation metrics are crucial
 for determining the effectiveness of the model in identifying defects and ensuring
 the reliability and efficiency of the solar power generation system.
+
 \subsection{Accuracy}
+
 Accuracy is a fundamental evaluation metric in machine learning that measures
 the proportion of correct predictions made by a model compared to the total
 number of predictions. It is calculated as the ratio of the number of correct predictions
 to the total number of predictions.
+
 \begin{equation}
     \text{Accuracy}= \frac{\text{TP + TN}}{\text{TP + TN + FP + FN}}\label{eq:accuracy}
 \end{equation}
@@ -551,13 +592,16 @@ with other metrics such as precision, recall, and F1-score to provide a more com
 evaluation of model performance.
 
 \subsection{Precision}
+
 Precision is a key evaluation metric in machine learning that measures the accuracy
 of positive predictions made by a model. It is defined as the ratio of true
 positive predictions to the total number of positive predictions (true positives
 + false positives).
+
 \begin{equation}
     \text{Precision}= \frac{\text{TP}}{\text{TP} + \text{FP}}\label{eq:precision}
 \end{equation}
+
 Precision is particularly important in scenarios where the cost of false positives
 is high, such as in medical diagnosis or fraud detection. A high precision indicates
 that the model is making accurate positive predictions, while a low precision
@@ -567,14 +611,17 @@ especially in cases of imbalanced datasets where one class is significantly more
 prevalent than the other.
 
 \subsection{Recall}
+
 Recall, also known as sensitivity or true positive rate, is a crucial evaluation
 metric in machine learning that measures the ability of a model to correctly
 identify positive instances. It is defined as the ratio of true positive predictions
 to the total number of actual positive instances (true positives + false
 negatives).
+
 \begin{equation}
     \text{Recall}= \frac{\text{TP}}{\text{TP} + \text{FN}}\label{eq:recall}
 \end{equation}
+
 Recall is particularly important in scenarios where the cost of false negatives
 is high, such as in medical diagnosis or fraud detection. A high recall
 indicates that the model is effectively capturing positive instances, while a low
@@ -584,14 +631,17 @@ performance, especially in cases of imbalanced datasets where one class is signi
 more prevalent than the other.
 
 \subsection{F1-Score}
+
 F1-score is a widely used evaluation metric in machine learning that combines both
 precision and recall into a single score. It is defined as the harmonic mean of
 precision and recall, providing a balanced measure of a model's performance in classification
 tasks.
+
 \begin{equation}
     \text{F1-Score}= 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision}
     + \text{Recall}}\label{eq:f1_score}
 \end{equation}
+
 The F1-score is particularly useful in scenarios where there is an imbalance
 between the classes, as it takes into account both false positives and false negatives.
 A high F1-score indicates that the model is performing well in terms of both
@@ -599,17 +649,21 @@ precision and recall, while a low F1-score suggests that the model is struggling
 to accurately classify instances. The F1-score is often used in conjunction with
 other metrics, such as accuracy and area under the ROC curve (AUC-ROC), to
 provide a comprehensive evaluation of model performance.
+
 \subsection{Area Under the ROC Curve (AUC-ROC)}
+
 Area Under the ROC Curve (AUC-ROC) is a performance metric used to evaluate the discriminative
 ability of a binary classification model. The ROC curve is a graphical
 representation of the true positive rate (sensitivity) against the false
 positive rate (1-specificity) at various threshold settings. The True Positive Rate
 (TPR) and False Positive Rate (FPR) are defined as:
+
 \begin{equation}
     \text{TPR (Recall)}= \frac{\text{True Positives (TP)}}{\text{True Positives
     (TP)}
     + \text{False Negatives (FN)}}
 \end{equation}
+
 \begin{equation}
     \text{FPR}= \frac{\text{False Positives}}{\text{False Positives} +
     \text{True Negatives}}
@@ -620,14 +674,16 @@ discriminative ability (equivalent to random guessing), and a score of 1 indicat
 perfect discrimination. A higher AUC-ROC score indicates better model
 performance, as it signifies that the model is more effective at distinguishing between
 positive and negative classes. AUC-ROC is particularly useful in scenarios with
-
 imbalanced datasets, as it provides a single measure of performance that
 accounts for both sensitivity and specificity across all possible classification
 thresholds. It is often used in conjunction with other metrics such as accuracy,
 precision, recall, and F1-score to provide a comprehensive evaluation of model
 performance.
 
-\section{t-SNE Visualization}
+\section{Visualization and Analysis Techniques}
+
+\subsection{t-SNE Visualization}
+
 t-SNE (t-distributed Stochastic Neighbor Embedding) is a dimensionality
 reduction technique that projects high-dimensional feature vectors into 2D or 3D
 space for visualization. In this study, t-SNE is applied to the feature
@@ -645,6 +701,7 @@ Cracking, Hot-Spot, Shadowing), while overlapping regions suggest potential
 confusion between classes.
 
 For the InfraredSolarModules dataset, t-SNE visualization serves three specific purposes:
+
 \begin{enumerate}
     \item \textbf{Class Separability Analysis:} Examining whether the 12 anomaly
         classes (Cell, Cell-Multi, Cracking, Hot-Spot, Hot-Spot-Multi, Shadowing,
@@ -664,7 +721,7 @@ The t-SNE plots are generated using the scikit-learn implementation with matplot
 for visualization, displaying each data point colored according to its ground
 truth anomaly class label.
 
-t-SNE helps address this challenge by:
+t-SNE helps address the challenge of understanding high-dimensional feature representations by:
 
 \begin{itemize}
     \item \textbf{Feature Space Exploration:} Mapping high-dimensional feature
@@ -685,10 +742,14 @@ t-SNE helps address this challenge by:
         between normal and anomalous samples.
 \end{itemize}
 
-Grad-Cam (Gradient-weighted Class Activation Mapping) is a technique used to visualize
+\subsection{Grad-CAM Visualization}
+
+Grad-CAM (Gradient-weighted Class Activation Mapping) is a technique used to visualize
 the regions of an image that contribute most to a model's prediction. It is
 particularly useful for understanding the decision-making process of deep
 learning models, especially convolutional neural networks (CNNs) and Vision Transformers
-(ViTs). Grad Cam provides insights into which parts of an image are most
+(ViTs). Grad-CAM provides insights into which parts of an image are most
 relevant to a specific class prediction, helping to interpret the model's behavior
 and identify potential areas of interest or concern.
+
+% Add proper citation for the InfraredSolarModules dataset here

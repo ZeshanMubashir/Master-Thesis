@@ -13,8 +13,6 @@ INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1200.tfm
-INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
-INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
@@ -289,8 +287,6 @@ INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlay
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryplotmarks.code.tex
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibraryplotmarks.code.tex
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibraryplotmarks.code.tex
-INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\textpos\textpos.sty
-INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\textpos\textpos.sty
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\biblatex.sty
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\biblatex.sty
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
@@ -389,6 +385,8 @@ INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\u
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\cleveref\cleveref.sty
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\cleveref\cleveref.sty
+INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\textpos\textpos.sty
+INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\textpos\textpos.sty
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
 INPUT .\main.aux
 INPUT .\main.aux
@@ -460,7 +458,8 @@ INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\c
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy8.tfm
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy6.tfm
-INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1728.tfm
+INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1440.tfm
+INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1200.tfm
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1728.tfm
 INPUT .\Figures\NTNU Main Logo.png
 INPUT .\Figures\NTNU Main Logo.png
@@ -470,12 +469,7 @@ INPUT .\Figures\NTNU Main Logo.png
 INPUT .\Figures\NTNU Main Logo.png
 INPUT .\Figures\NTNU Main Logo.png
 INPUT C:\Users\zeshanm\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1200.tfm
-INPUT .\Figures\NTNU Main Logo.png
-INPUT .\Figures\NTNU Main Logo.png
-INPUT .\Figures\NTNU Main Logo.png
-INPUT .\Figures\NTNU Main Logo.png
-INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecsl1200.tfm
+INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1728.tfm
 INPUT .\Chapters\00Abstract.tex
 INPUT .\Chapters\00Abstract.tex
 INPUT .\Chapters\00Abstract.tex
@@ -502,6 +496,7 @@ INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\s
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
+INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecsl1200.tfm
 OUTPUT main.toc
 INPUT .\main.lof
 INPUT .\main.lof
@@ -527,7 +522,6 @@ INPUT .\Chapters\Ch2Literature Review.tex
 INPUT .\Chapters\Ch2Literature Review.tex
 INPUT .\Chapters\Ch2Literature Review.tex
 INPUT Chapters\Ch2Literature Review.tex
-INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1440.tfm
 INPUT C:\Users\zeshanm\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm
 INPUT .\Chapters\Ch3Theoratical Background.tex
 INPUT .\Chapters\Ch3Theoratical Background.tex
@@ -599,12 +593,14 @@ INPUT C:\Users\zeshanm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\e
 INPUT C:\Users\zeshanm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsl1200.pk
 INPUT C:\Users\zeshanm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
 INPUT C:\Users\zeshanm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
+INPUT C:\Users\zeshanm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk
+INPUT C:\Users\zeshanm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk
 INPUT C:\Users\zeshanm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
 INPUT C:\Users\zeshanm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
 INPUT C:\Users\zeshanm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
 INPUT C:\Users\zeshanm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
-INPUT C:\Users\zeshanm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk
-INPUT C:\Users\zeshanm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk
+INPUT C:\Users\zeshanm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk
+INPUT C:\Users\zeshanm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk
 INPUT C:\Users\zeshanm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1095.pk
 INPUT C:\Users\zeshanm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1095.pk
 INPUT C:\Users\zeshanm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1095.pk

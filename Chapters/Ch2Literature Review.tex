@@ -1,177 +1,272 @@
-This chapter will give a brief overview of the theoretical background about PV
-systems (Land Based and Floating) behind the methods and algorithms used in this
-thesis. It will also give an overview of the data used, and how it is structured.
-The theory will be explained in a way that is easy to understand, and will not
-go into too much detail.
+This chapter provides a comprehensive overview of the theoretical background of photovoltaic (PV) systems, including both land-based and floating installations. It covers the fundamental concepts, anomaly types, detection methods, and relevant technologies used in this thesis. The theory is presented in an accessible manner to provide a solid foundation for understanding the methodologies and algorithms employed in this research.
 
-\section{Land-based photovoltaic (PV) systems}
-Land-based photovoltaic (PV) systems are solar energy systems installed on the
-ground or rooftops, utilizing solar panels to convert sunlight into electricity.
-These systems harness solar energy for residential, commercial, and utility-scale
-applications. Key components include solar panels (typically silicon-based),
-inverters for DC--AC conversion, mounting structures, and electrical connections.
-Mounting structures ensure panels are securely positioned for optimal sunlight
-capture. These systems can vary from small residential setups to large-scale solar
-farms feeding the grid. They play a crucial role in promoting renewable energy
-adoption, reducing greenhouse gas emissions, and supporting a sustainable energy
-future.
+\section{Photovoltaic Systems}
 
-According to the IEA, land-based PV is one of the fastest-growing sources of renewable
-energy worldwide, benefiting from low operating costs, scalability, and
-versatile siting---including rooftops, open fields, and brownfield sites. Advances
-in solar technology have improved efficiency and lowered costs, enhancing
-economic viability. Recent studies support these advantages: Belloni et al.\ (2023)
-demonstrated how machine-learning optimization can improve O\&M efficiency;
-Bindi et al.\ (2022) documented dramatic cost reductions, making PV is
-competitive with fossil fuels, and environmental assessments indicate minimal land-use
-impact.
+\subsection{Land-based Photovoltaic (PV) Systems}
 
-\section{Floating PVs}
-Floating photovoltaic (PV) systems, or floating solar, are innovative installations
-deployed on bodies of water such as lakes, reservoirs, and ponds. These systems
-consist of solar panels mounted on floating platforms or pontoons, allowing them
-to harness sunlight while floating on the water's surface. ()
+Land-based photovoltaic (PV) systems are solar energy installations deployed on terrestrial surfaces, including ground-mounted installations and rooftop systems. These systems convert sunlight directly into electricity through the photovoltaic effect, utilizing semiconductor materials typically based on silicon technology.
 
-Floating PV systems offer several advantages over traditional land-based
-installations:
+Key components of land-based PV systems include:
 \begin{itemize}
-  \item \textbf{Reduced land use}: They do not occupy terrestrial land and can be
-    deployed over existing water bodies---including reservoirs, irrigation ponds,
-    and brownfields.
-
-  \item \textbf{Natural cooling and higher efficiency}: Water cooling reduces operating
-    temperatures, increasing electrical output by 5--15\%, with some field tests
-    reporting up to 11\% improvements.
-
-  \item \textbf{Water evaporation suppression}: Shading from panels reduces reservoir
-    evaporation by 42--83\% in empirical tests---e.g., a 130 kW installation in Brazil
-    cut evaporation by 60\%.
-
-  \item \textbf{Higher energy yield and LCA performance}: FPV systems can outperform
-    ground-mounted configurations and feature shorter energy payback times (approximately
-    1.3 years) and lower lifecycle GHG emissions.
-
-  \item \textbf{Synergy with hydropower}: They can integrate with dams and transmission
-    infrastructure, enhancing grid flexibility.
+    \item \textbf{Solar panels}: Photovoltaic modules containing solar cells (typically silicon-based) that convert sunlight into direct current (DC) electricity
+    \item \textbf{Inverters}: Power electronic devices that convert DC electricity to alternating current (AC) for grid compatibility
+    \item \textbf{Mounting structures}: Mechanical systems that securely position and orient panels for optimal solar irradiance capture
+    \item \textbf{Electrical components}: Wiring, combiner boxes, disconnect switches, and monitoring systems
 \end{itemize}
 
-\section{Anomalies types in Floating PVs}
+Land-based PV systems offer versatility in deployment, ranging from small residential installations to utility-scale solar farms spanning hundreds of acres. According to the International Energy Agency (IEA), land-based PV represents one of the fastest-growing renewable energy sources globally, driven by declining costs, improved efficiency, and favorable policy frameworks.
 
-Like their land-based counterparts, floating photovoltaic (FPV) systems can
-experience various types of anomalies that affect their performance and
-efficiency. These anomalies include soiling, algae growth, shading, and
-structural issues. Detecting these anomalies early is crucial for maintaining an
-optimal system performance and ensuring the longevity of the floating PV system.
+Recent research has demonstrated significant advances in land-based PV technology. Belloni et al. (2023) showed how machine learning optimization can improve operations and maintenance (O\&M) efficiency, while Bindi et al. (2022) documented dramatic cost reductions that have made PV competitive with conventional fossil fuel generation. Environmental assessments indicate that modern land-based PV systems have minimal land-use impact and short energy payback times.
 
-\section{Anomalies Types in Land-based PVs}
-PV systems can experience various anomalies affecting their performance and efficiency.
-These anomalies include hot spots, cell cracks, soiling, shading, and
-degradation. Detecting these anomalies early is crucial for maintaining optimal system
-performance.
+\subsection{Floating Photovoltaic (FPV) Systems}
 
-\noindent
-\textbf{Hot Spots:} Hot spots occur when a portion of a solar panel becomes
-significantly hotter than the surrounding areas. This can happen due to partial shading,
-cell mismatch, or manufacturing defects. Hot spots can lead to reduced
-efficiency and even permanent damage to the solar cells if not addressed
-promptly.
+Floating photovoltaic (FPV) systems, also known as floating solar or floatovoltaics, represent an innovative approach to solar energy deployment on water bodies such as reservoirs, lakes, ponds, and coastal areas. These systems consist of solar panels mounted on specialized floating platforms or pontoons that maintain stability and optimal orientation while floating on the water surface.
 
-\noindent
-\textbf{Cell Cracks:} Cell cracks are physical damage to the solar cells that can
-occur during manufacturing, transportation, or installation. These cracks can
-reduce the electrical output of the affected cells and may lead to further
-degradation over time. Detecting cell cracks early is essential to prevent further
-damage and ensure the longevity of the solar panel.
-\noindent
-\textbf{Soiling:} Soiling refers to the accumulation of dirt, dust, and other debris
-on the surface of solar panels. This layer of dirt can block sunlight from
-reaching the solar cells, significantly reducing their efficiency. Regular
-cleaning and maintenance are necessary to prevent soiling from impacting the
-performance of the PV system.
-\noindent
-\textbf{Shading:} Shading occurs when objects such as trees, buildings, or other
-structures block sunlight from reaching the solar panels. Even partial shading can
-cause significant drops in energy production, as solar panels are designed to
-operate optimally in direct sunlight. Identifying and mitigating shading issues is
-crucial for maintaining the efficiency of PV systems.
-\noindent
-\textbf{Degradation:} Over time, solar panels can experience degradation due to
-exposure to environmental factors such as UV radiation, temperature fluctuations,
-and moisture. This degradation can lead to a gradual decline in the performance of
-the solar panels. Regular monitoring and maintenance are necessary to assess the
-condition of the panels and address any degradation issues promptly.
+FPV systems offer several distinct advantages over traditional land-based installations:
 
-\section{Power loss in PV systems}
-Power loss in photovoltaic (PV) systems refers to the reduction in electrical
-output due to various factors, including shading, soiling, temperature effects,
-and anomalies such as hot spots and cell cracks. These losses can significantly impact
-the overall efficiency and performance of the PV system, leading to lower energy
-production and increased operational costs. Understanding the causes of power loss
-is crucial for optimizing the design and operation of PV systems, ensuring that
-they operate at their maximum potential. By implementing effective monitoring and
-maintenance strategies, operators can minimize power loss and enhance the
-overall efficiency of photovoltaic systems.
+\begin{itemize}
+    \item \textbf{Land conservation}: FPV systems eliminate competition for valuable terrestrial land resources, making them particularly attractive in densely populated regions or areas with high land costs
+    
+    \item \textbf{Enhanced efficiency through natural cooling}: Water bodies provide natural cooling effects that reduce panel operating temperatures, typically resulting in 5-15\% higher electrical output compared to equivalent land-based systems. Field studies have documented efficiency improvements of up to 11\% due to this cooling effect
+    
+    \item \textbf{Water conservation benefits}: Solar panels provide shading that significantly reduces water evaporation from reservoirs and water bodies. Empirical studies have shown evaporation reductions of 42-83\%, with some installations achieving 60\% reduction in water loss
+    
+    \item \textbf{Superior lifecycle performance}: FPV systems often demonstrate better energy yield and lifecycle assessment (LCA) metrics, with energy payback times of approximately 1.3 years and lower greenhouse gas emissions compared to land-based alternatives
+    
+    \item \textbf{Grid integration synergies}: FPV installations can leverage existing hydroelectric infrastructure, including transmission lines and grid connections, reducing overall system costs and complexity
+\end{itemize}
 
-\section{Anomalies Detection Methods}
-Anomaly detection methods in photovoltaic (PV) systems are essential for
-identifying and addressing issues that can impact the performance and efficiency
-of solar panels. These methods leverage various techniques, including
-statistical analysis, machine learning, and computer vision, to automatically detect
-anomalies such as hot spots, cell cracks, soiling, shading, and degradation. By
-employing these methods, operators can ensure timely maintenance and repairs,
-ultimately enhancing the reliability and longevity of PV systems.
+\section{Anomaly Types in Photovoltaic Systems}
+
+Understanding the various types of anomalies that can affect PV systems is crucial for effective monitoring and maintenance strategies. These anomalies can significantly impact system performance, efficiency, and longevity.
+
+\subsection{Thermal Anomalies}
+
+\textbf{Hot Spots}: Hot spots occur when localized areas of a solar panel become significantly hotter than surrounding regions. This phenomenon can result from:
+\begin{itemize}
+    \item Partial shading causing current mismatch
+    \item Manufacturing defects in individual cells
+    \item Degraded or damaged cells with higher resistance
+    \item Poor electrical connections
+\end{itemize}
+Hot spots can lead to accelerated degradation, reduced efficiency, and potential safety hazards if left unaddressed.
+
+\subsection{Physical Defects}
+
+\textbf{Cell Cracks}: Physical damage to solar cells can occur during various stages:
+\begin{itemize}
+    \item Manufacturing processes
+    \item Transportation and handling
+    \item Installation procedures
+    \item Environmental stresses (thermal cycling, mechanical loads)
+\end{itemize}
+Cell cracks can create electrical disconnections, leading to power losses and potential hot spot formation.
+
+\textbf{Module-level Damage}: Structural damage to entire modules, including frame deformation, glass breakage, or encapsulant degradation.
+
+\subsection{Environmental Impact Anomalies}
+
+\textbf{Soiling}: The accumulation of particulate matter on panel surfaces, including:
+\begin{itemize}
+    \item Dust and dirt deposits
+    \item Bird droppings
+    \item Pollen and organic debris
+    \item Industrial pollutants
+\end{itemize}
+Soiling can significantly reduce light transmission and energy output.
+
+\textbf{Shading}: Obstruction of solar irradiance by external objects:
+\begin{itemize}
+    \item Vegetation growth
+    \item Adjacent structures or panels
+    \item Temporary objects
+    \item Cloud shadows
+\end{itemize}
+
+\subsection{Electrical Anomalies}
+
+\textbf{Diode Failures}: Bypass diode malfunctions that can affect module-level performance and protection.
+
+\textbf{Module Disconnection}: Complete electrical isolation of modules due to connector failures or wiring issues.
+
+\subsection{Floating PV-Specific Anomalies}
+
+FPV systems face additional challenges related to their aquatic environment:
+\begin{itemize}
+    \item \textbf{Algae growth}: Biological fouling on panel surfaces
+    \item \textbf{Water-related corrosion}: Accelerated degradation due to humidity and water exposure
+    \item \textbf{Structural instability}: Platform movement or anchoring system failures
+    \item \textbf{Marine biofouling}: Attachment of aquatic organisms to system components
+\end{itemize}
+
+\section{Power Loss Mechanisms in PV Systems}
+
+Power loss in photovoltaic systems represents the reduction in electrical output relative to the theoretical maximum power generation capacity. Understanding these loss mechanisms is essential for optimizing system design, operation, and maintenance strategies.
+
+Power losses in PV systems can be categorized into several types:
+\begin{itemize}
+    \item \textbf{Optical losses}: Reflection, absorption in non-active materials, and shading
+    \item \textbf{Thermal losses}: Efficiency reduction due to elevated operating temperatures
+    \item \textbf{Electrical losses}: Resistance losses in wiring, connections, and power electronics
+    \item \textbf{Mismatch losses}: Performance variations between individual modules or cells
+    \item \textbf{Degradation losses}: Long-term performance decline due to aging and environmental exposure
+\end{itemize}
+
+Effective monitoring and anomaly detection systems can help minimize these losses by enabling timely identification and remediation of performance-limiting issues.
+
+\section{Anomaly Detection Methods}
+
+The detection and diagnosis of anomalies in PV systems require sophisticated monitoring and analysis techniques. This section reviews the primary methodologies employed for anomaly detection in solar installations.
 
 \subsection{Visual Inspection}
 
-Visual inspection is a traditional method for detecting anomalies in photovoltaic(PV)
-systems. It involves manually examining solar panels for visible defects such as
-cracks, discoloration, and soiling. While visual inspection can be effective for
-identifying obvious issues, it is often time-consuming and labor-intensive,
-especially for large-scale PV installations. Additionally, human inspectors may
-overlook subtle anomalies that could affect the performance of the solar panels.
-To address these limitations, automated visual inspection techniques have been
-developed, leveraging computer vision and machine learning algorithms to analyze
-images of solar panels and detect anomalies with higher accuracy and efficiency.
-These automated systems can process large volumes of data quickly, reducing the need
-for manual labor and increasing the speed of anomaly detection in PV systems.
+Traditional visual inspection involves manual examination of PV systems by trained personnel. While this approach can identify obvious defects and maintenance issues, it has several limitations:
 
-\setlength{\parskip}{0.5em plus 0.2em minus 0.2em}
-\setlength{\parindent}{0pt}
+\textbf{Advantages}:
+\begin{itemize}
+    \item Direct assessment of visible damage
+    \item No specialized equipment required
+    \item Comprehensive evaluation of system components
+\end{itemize}
 
-\subsection{IR Thermography}
+\textbf{Limitations}:
+\begin{itemize}
+    \item Labor-intensive and time-consuming
+    \item Subjective and inconsistent results
+    \item Limited ability to detect internal or thermal anomalies
+    \item Scaling challenges for large installations
+\end{itemize}
 
-IR thermography, or infrared thermography, is a non-destructive testing technique
-that uses infrared cameras to detect and visualize temperature variations on the
-surface of objects. In the context of photovoltaic (PV) systems, IR thermography
-is employed to identify anomalies such as hot spots, cell cracks, and other thermal
-issues that can affect the performance of solar panels. By capturing thermal
-images, operators can quickly assess the condition of PV systems, enabling them
-to detect potential problems early and take corrective actions to maintain
-optimal performance.
+Modern automated visual inspection systems leverage computer vision and machine learning to overcome these limitations, providing consistent, scalable, and objective anomaly detection capabilities.
 
-\subsection{EL Imaging}
+\subsection{Infrared (IR) Thermography}
 
-Electroluminescence (EL) imaging is a technique used to visualize the internal structure
-of photovoltaic (PV) cells by capturing the light emitted when an electric current
-is passed through the cells. This method is particularly useful for detecting
-anomalies such as micro-cracks, shunts, and other defects that may not be
-visible through traditional visual inspection methods. EL imaging provides a detailed
-view of the PV cells, allowing operators to identify and address issues that can
-affect the performance and efficiency of solar panels. By employing EL imaging,
-operators can ensure the reliability and longevity of PV systems, ultimately enhancing
-their energy production capabilities.
+Infrared thermography is a non-destructive testing technique that uses thermal imaging cameras to detect temperature variations across PV system components. This method is particularly effective for identifying thermal anomalies such as hot spots, cell failures, and electrical connection issues.
 
-\section{Machine Learning}
+\textbf{Technical Principles}:
+\begin{itemize}
+    \item Detection of infrared radiation emitted by objects
+    \item Temperature mapping with high spatial resolution
+    \item Real-time or near-real-time data acquisition
+\end{itemize}
 
-\section{Deep Learning}
+\textbf{Applications in PV Systems}:
+\begin{itemize}
+    \item Hot spot detection and localization
+    \item Cell-level failure identification
+    \item Electrical connection assessment
+    \item Module-level performance evaluation
+\end{itemize}
 
-\section{Computer Vision}
-Computer vision is a field of artificial intelligence that focuses on enabling machines
-to interpret and understand visual information from the world. It involves the
-development of algorithms and models that can process, analyze, and extract
-meaningful information from images and videos. In the context of solar PV systems,
-computer vision techniques can be employed to automatically detect and classify
-anomalies in solar panels, such as cracks, soiling, and shading. By leveraging
-computer vision, it is possible to automate the inspection process, reducing the
-need for manual labor and increasing the efficiency of anomaly detection in
-solar PV systems.
+\textbf{Advantages}:
+\begin{itemize}
+    \item Non-invasive and non-destructive
+    \item Rapid data acquisition over large areas
+    \item High sensitivity to thermal anomalies
+    \item Suitable for airborne (UAV) deployment
+\end{itemize}
+
+\subsection{Electroluminescence (EL) Imaging}
+
+Electroluminescence imaging is a specialized technique that visualizes the internal structure and electrical characteristics of photovoltaic cells. This method involves injecting current into solar cells and capturing the resulting light emission patterns.
+
+\textbf{Technical Process}:
+\begin{itemize}
+    \item Forward current injection into PV cells
+    \item Near-infrared light emission detection
+    \item High-resolution imaging of cell structure
+\end{itemize}
+
+\textbf{Detection Capabilities}:
+\begin{itemize}
+    \item Micro-cracks and structural defects
+    \item Shunt resistance variations
+    \item Cell interconnection issues
+    \item Manufacturing defects
+\end{itemize}
+
+\textbf{Advantages}:
+\begin{itemize}
+    \item Exceptional detail resolution
+    \item Detection of invisible defects
+    \item Quantitative analysis capabilities
+\end{itemize}
+
+\textbf{Limitations}:
+\begin{itemize}
+    \item Requires electrical access to modules
+    \item Limited to controlled environments
+    \item Time-intensive data acquisition
+\end{itemize}
+
+\section{Artificial Intelligence and Machine Learning}
+
+\subsection{Machine Learning Fundamentals}
+
+Machine learning (ML) represents a subset of artificial intelligence that enables systems to automatically learn and improve performance from experience without explicit programming. In the context of PV anomaly detection, ML algorithms can identify patterns in data that indicate system anomalies or performance degradation.
+
+\textbf{Key ML Paradigms}:
+\begin{itemize}
+    \item \textbf{Supervised Learning}: Training with labeled datasets to predict outcomes for new data
+    \item \textbf{Unsupervised Learning}: Pattern discovery in unlabeled data
+    \item \textbf{Semi-supervised Learning}: Combination of labeled and unlabeled data for training
+    \item \textbf{Reinforcement Learning}: Learning through interaction with an environment
+\end{itemize}
+
+\textbf{Applications in PV Systems}:
+\begin{itemize}
+    \item Anomaly classification and detection
+    \item Performance prediction and optimization
+    \item Maintenance scheduling and planning
+    \item Fault diagnosis and troubleshooting
+\end{itemize}
+
+\subsection{Deep Learning}
+
+Deep learning represents an advanced subset of machine learning that utilizes artificial neural networks with multiple hidden layers to learn complex patterns and representations from data. Deep learning has shown exceptional performance in image analysis tasks, making it particularly suitable for PV anomaly detection using thermal and visual imagery.
+
+\textbf{Deep Learning Architectures}:
+\begin{itemize}
+    \item \textbf{Convolutional Neural Networks (CNNs)}: Specialized for image processing and spatial pattern recognition
+    \item \textbf{Recurrent Neural Networks (RNNs)}: Designed for sequential data and time-series analysis
+    \item \textbf{Vision Transformers (ViTs)}: Attention-based models adapted for computer vision tasks
+    \item \textbf{Autoencoders}: Unsupervised learning models for dimensionality reduction and anomaly detection
+\end{itemize}
+
+\textbf{Advantages for PV Anomaly Detection}:
+\begin{itemize}
+    \item Automatic feature extraction from raw data
+    \item Superior performance on complex pattern recognition tasks
+    \item Scalability to large datasets
+    \item Adaptability to various data types and modalities
+\end{itemize}
+
+\subsection{Computer Vision}
+
+Computer vision is a multidisciplinary field that develops methods to enable machines to interpret and understand visual information from digital images and videos. In PV system monitoring, computer vision techniques are employed to automatically analyze thermal and optical imagery for anomaly detection and classification.
+
+\textbf{Core Computer Vision Tasks}:
+\begin{itemize}
+    \item \textbf{Image Classification}: Categorizing images into predefined classes
+    \item \textbf{Object Detection}: Locating and identifying specific objects within images
+    \item \textbf{Semantic Segmentation}: Pixel-level classification of image regions
+    \item \textbf{Instance Segmentation}: Distinguishing between individual object instances
+\end{itemize}
+
+\textbf{Image Processing Techniques}:
+\begin{itemize}
+    \item Preprocessing and enhancement algorithms
+    \item Feature extraction and representation methods
+    \item Pattern recognition and classification approaches
+    \item Visualization and interpretation tools
+\end{itemize}
+
+\textbf{Applications in PV Monitoring}:
+\begin{itemize}
+    \item Automated visual inspection systems
+    \item Thermal anomaly detection and localization
+    \item Defect classification and severity assessment
+    \item Real-time monitoring and alerting systems
+\end{itemize}
+
+The integration of these technologies provides a comprehensive framework for advanced PV system monitoring, enabling efficient, accurate, and scalable anomaly detection capabilities that support optimal system performance and maintenance strategies.

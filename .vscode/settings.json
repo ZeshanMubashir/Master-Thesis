@@ -1,1 +1,57 @@
-{}
+{
+    // LaTeX Workshop Configuration
+    "latex-workshop.latex.autoBuild.run": "onFileChange",
+    "latex-workshop.view.pdf.viewer": "tab",
+    
+    // PDF Toolbar with visual buttons
+    "latex-workshop.view.pdf.toolbar": {
+        "position": "top",
+        "buttons": [
+            {
+                "id": "synctex",
+                "tooltip": "⇄ Sync between source and PDF",
+                "icon": "sync"
+            },
+            {
+                "id": "navigation",
+                "tooltip": "Navigate PDF",
+                "icon": "arrow-both"
+            },
+            {
+                "id": "zoom",
+                "tooltip": "Zoom controls",
+                "icon": "zoom-in"
+            },
+            {
+                "id": "spread",
+                "tooltip": "Page spread",
+                "icon": "book"
+            }
+        ]
+    },
+    
+    // SyncTeX configuration
+    "latex-workshop.synctex.afterBuild.enabled": true,
+    "latex-workshop.view.pdf.internal.synctex.keybinding": "ctrl+alt+j",
+    
+    // External viewer configuration (optional - for SumatraPDF on Windows)
+    "latex-workshop.view.pdf.external.viewer.command": "C:/Program Files/SumatraPDF/SumatraPDF.exe",
+    "latex-workshop.view.pdf.external.viewer.args": [
+        "-forward-search",
+        "%TEX%",
+        "%LINE%",
+        "-reuse-instance",
+        "-inverse-search",
+        "code.exe -r -g \"%f:%l\"",
+        "%PDF%"
+    ],
+    
+    // Color customization for visual feedback
+    "latex-workshop.view.pdf.color.light.pageColorsForeground": "#000000",
+    "latex-workshop.view.pdf.color.light.pageColorsBackground": "#ffffff",
+    "latex-workshop.view.pdf.color.light.synctexIndicatorColor": "#ff0000",
+    
+    // Enable hover preview
+    "latex-workshop.hover.preview.enabled": true,
+    "latex-workshop.hover.preview.scale": 1.0
+}

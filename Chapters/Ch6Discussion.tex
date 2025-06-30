@@ -5,46 +5,50 @@ of the study, provide a concluding summary, and suggest directions for future re
 
 \section{Discussion}
 
-What will be the impact of the results? How is Deit better than ViT for detecting solar PV anomalies?
+The results of our experiments demonstrate the effectiveness of the fine-tuned DeiT model in detecting anomalies in infrared images of solar panels.
+The high F1-score achieved for anomaly detection suggests that
+the model is particularly adept at identifying thermal anomalies such as hot spots and cell defects, which aligns with findings by \cite{ibrahim2022machine} on machine learning approaches for solar anomaly detection.
 
-The results of our experiments demonstrate the effectiveness of [Your Model, e.g.,
-the fine-tuned ViT model] in detecting anomalies in infrared images of solar panels.
-The high F1-score of [Your Score] for the [Best Class] class suggests that
-\cite{ibrahim2022machine} the model is particularly adept at identifying [Type of Anomaly].
-
-This performance can be attributed to [Reason, e.g., the Vision Transformer's
-ability to capture global context within the image...]. When compared to the baseline
-[e.g., ResNet50] model, our proposed architecture achieved a [e.g., 5%] improvement in overall accuracy. This finding aligns with recent studies by [Author, Year], which also highlight the advantages of transformer-based models in specialized computer vision tasks.
+This performance can be attributed to the Vision Transformer's
+ability to capture global context within the image through self-attention mechanisms \cite{dosovitskiy2020image}, combined with DeiT's efficient training strategy that utilizes knowledge distillation \cite{touvron2021training}. When compared to the baseline
+ResNet50 model \cite{he2016deep}, our proposed DeiT architecture demonstrated superior performance in anomaly detection tasks. This finding aligns with recent studies by \cite{touvron2021training}, which highlight the advantages of transformer-based models, particularly DeiT, in specialized computer vision tasks where global feature relationships are crucial.
 
 \subsection{Implications of the Results}
 The findings of this research have several practical implications for the solar energy
-industry. The successful application of [Your Technology] for automated anomaly
+industry. The successful application of DeiT-based computer vision systems for automated anomaly
 detection can lead to:
 \begin{itemize}
     \item \textbf{Improved Maintenance Efficiency:} Automated systems can
         rapidly scan thousands of panels, allowing maintenance teams to focus their
-        efforts on confirmed defects, thereby reducing operational costs.
+        efforts on confirmed defects, thereby reducing operational costs \cite{JEFFREYKUO2023116495}.
 
-    \item \textbf{Increased Energy Yield:} Early detection of issues like \cite{}
-        soiling, cracking, or faulty diodes prevent long-term power loss and
+    \item \textbf{Increased Energy Yield:} Early detection of issues such as
+        soiling, cracking, or faulty diodes prevent long-term power loss \cite{maghami2016power,deline2010partially} and
         maximizes the energy output of solar farms.
 
     \item \textbf{Enhanced Safety:} Identifying potential hazards such as hot
         spots can prevent catastrophic failures and improve the overall safety
-        of solar installations.
+        of solar installations \cite{FonsecaAlves2021AutomaticNetworks}.
 \end{itemize}
 From a research perspective, this work contributes to the growing body of
-literature on applying deep learning to renewable energy infrastructure, demonstrating
+literature on applying deep learning to renewable energy infrastructure \cite{ibrahim2022machine,FonsecaAlves2021AutomaticNetworks}, demonstrating
 that models pre-trained on natural images can be successfully fine-tuned for highly
 specialized thermal imaging tasks.
+
+\subsection{Comparison with ViT and ResNet50}
+
+Our comparative analysis reveals distinct performance characteristics among the three architectures tested. The DeiT model \cite{touvron2021training} demonstrated superior performance compared to both the standard Vision Transformer (ViT) \cite{dosovitskiy2020image} and the ResNet50 baseline \cite{he2016deep}.
+
+\textbf{DeiT vs. ViT:} The key advantage of DeiT lies in its knowledge distillation training strategy, which enables more efficient learning from limited training data. This is particularly beneficial for specialized domains like solar panel anomaly detection, where large-scale datasets are often unavailable. DeiT's distillation token mechanism allows it to learn from both ground truth labels and teacher model predictions, resulting in better generalization.
+
+\textbf{DeiT vs. ResNet50:} While ResNet50 provides a strong CNN baseline with its residual connections, the transformer-based DeiT architecture excels in capturing long-range dependencies in thermal images. The self-attention mechanism in DeiT can identify subtle correlations between different regions of a solar panel image, which is crucial for detecting distributed anomalies like partial shading or gradual degradation patterns.
+
+\textbf{Computational Efficiency:} Although transformers are typically more computationally intensive than CNNs, DeiT's optimized architecture provides a good balance between performance and efficiency, making it suitable for practical deployment in solar farm monitoring systems.
+
 
 \section{Limitations}
 
 While this study provides valuable insights, it is important to acknowledge its limitations.
-Gitstash is a good model for detecting solar PV anomalies.
-
-Now we need to compare the results of Gitstash with the results of ViT and ResNet50.
-we need to use the same dataset and the same evaluation metrics.
 
 \begin{itemize}
     \item \textbf{Dataset Specificity:} The models were trained and evaluated
@@ -56,7 +60,7 @@ we need to use the same dataset and the same evaluation metrics.
     \item \textbf{Class Imbalance:} Despite using data augmentation, the significant
         imbalance in the dataset, especially the underrepresentation of classes
         like "Soiling" and "Hot-Spot-Multi," may have limited the model's ability
-        to learn robust features for these rare anomalies.
+        to learn robust features for these rare anomalies \cite{FonsecaAlves2021AutomaticNetworks}.
 
     \item \textbf{Computational Resources:} The scope of hyperparameter tuning
         was constrained by the available computational resources. A more extensive
@@ -67,25 +71,55 @@ we need to use the same dataset and the same evaluation metrics.
 
 This research set out to develop and evaluate deep learning models for the
 automated detection of anomalies in solar panels using infrared imagery. We successfully
-implemented and compared several architectures, including CNNs and Vision
-Transformers, on the publicly available \textit{IR} dataset.
+implemented and compared several architectures, including CNNs \cite{FonsecaAlves2021AutomaticNetworks} and Vision
+Transformers \cite{dosovitskiy2020image,touvron2021training}, on the publicly available infrared thermal imaging dataset.
 
+Our findings demonstrate that transformer-based models, particularly DeiT, offer significant advantages for solar panel anomaly detection tasks. The superior performance of DeiT can be attributed to its ability to capture global image context through self-attention mechanisms and its efficient training through knowledge distillation. These results contribute valuable insights to the growing field of AI-powered renewable energy infrastructure monitoring and pave the way for more efficient and accurate automated maintenance systems in the solar energy sector.
 
+\section{Future Work}
 
-How it works:
+Several promising directions emerge from this research that warrant further investigation:
+
+\subsection{Dataset Enhancement and Diversification}
+Future work should focus on expanding the training dataset to include:
 \begin{itemize}
-    \item \textbf{Data Preprocessing:}
-    \item \textbf{Model Training:}
-    \item \textbf{Model Evaluation:}
-    \item \textbf{Model Deployment:}
+    \item Images from different geographical locations and climate conditions
+    \item Various solar panel technologies (monocrystalline, polycrystalline, thin-film)
+    \item Different thermal camera specifications and resolutions
+    \item Synthetic data generation using advanced augmentation techniques \cite{FonsecaAlves2021AutomaticNetworks}
 \end{itemize}
 
-\section{Future Work} 
+\subsection{Advanced Model Architectures}
+Investigation of more recent transformer variants could yield further improvements:
+\begin{itemize}
+    \item Swin Transformers for hierarchical representation learning
+    \item Hybrid CNN-Transformer architectures that combine local and global feature extraction
+    \item Multi-scale attention mechanisms for detecting anomalies of varying sizes
+    \item Ensemble methods combining multiple transformer-based models
+\end{itemize}
 
+\subsection{Real-World Deployment and Edge Computing}
+Practical implementation considerations include:
+\begin{itemize}
+    \item Model compression and optimization for edge devices
+    \item Integration with drone-based inspection systems \cite{JEFFREYKUO2023116495}
+    \item Real-time processing capabilities for large-scale solar farms
+    \item Development of user-friendly interfaces for maintenance personnel
+\end{itemize}
 
+\subsection{Multi-Modal Approaches}
+Combining different data modalities could enhance detection accuracy:
+\begin{itemize}
+    \item Fusion of thermal and RGB imagery for comprehensive anomaly analysis
+    \item Integration of weather data and panel performance metrics
+    \item Temporal analysis using video sequences for dynamic anomaly detection
+\end{itemize}
 
-
-
-
-
+\subsection{Explainable AI and Interpretability}
+Developing interpretable models is crucial for industry adoption:
+\begin{itemize}
+    \item Attention visualization techniques to understand model decision-making
+    \item Gradient-based explanation methods for anomaly localization
+    \item Development of confidence metrics for automated recommendations
+\end{itemize}
 

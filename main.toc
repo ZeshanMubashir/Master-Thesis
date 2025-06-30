@@ -1,80 +1,112 @@
-\contentsline {chapter}{Abstract}{i}{chapter*.1}%
-\contentsline {chapter}{Sammendrag}{ii}{chapter*.2}%
-\contentsline {chapter}{Preface}{iii}{chapter*.3}%
-\contentsline {chapter}{Contents}{viii}{chapter*.4}%
-\contentsline {chapter}{List of Figures}{ix}{chapter*.5}%
-\contentsline {chapter}{List of Tables}{x}{chapter*.6}%
-\contentsline {chapter}{Abbreviations}{xi}{chapter*.7}%
+\contentsline {chapter}{\numberline {}Abstract}{i}{chapter*.2}%
+\contentsline {chapter}{\numberline {}Sammendrag}{ii}{chapter*.3}%
+\contentsline {chapter}{\numberline {}Preface}{iii}{chapter*.4}%
+\contentsline {chapter}{\numberline {}Contents}{vi}{chapter*.5}%
+\contentsline {chapter}{\numberline {}List of Figures}{vi}{chapter*.5}%
+\contentsline {chapter}{\numberline {}List of Tables}{vii}{chapter*.6}%
+\contentsline {chapter}{\numberline {}Abbreviations}{ix}{chapter*.8}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Background and Motivation}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Objectives}{3}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Research Questions}{3}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Significance of the Study}{4}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Thesis Structure}{4}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Scope}{5}{section.1.6}%
-\contentsline {chapter}{\numberline {2}Literature Review}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Land-based photovoltaic (PV) systems}{7}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Floating PVs}{8}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Anomalies types in Floating PVs}{9}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Anomalies Types in Land-based PVs}{9}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Power loss in PV systems}{10}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Anomalies Detection Methods}{11}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Visual Inspection}{11}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}IR Thermography}{11}{subsection.2.6.2}%
-\contentsline {subsection}{\numberline {2.6.3}EL Imaging}{12}{subsection.2.6.3}%
-\contentsline {section}{\numberline {2.7}Machine Learning}{12}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Deep Learning}{12}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Computer Vision}{12}{section.2.9}%
-\contentsline {chapter}{\numberline {3}Theoretical Background}{15}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Methodology}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Overview of Dataset}{17}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Data Preprocessing}{20}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Image Filter}{20}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Histogram Equalization}{20}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Image Resizing}{21}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Data Augmentation}{21}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Offline Data Augmentation}{21}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Online Data Augmentation}{21}{subsection.4.2.5}%
-\contentsline {subsection}{\numberline {4.2.6}Data Normalization}{22}{subsection.4.2.6}%
-\contentsline {subsection}{\numberline {4.2.7}Data Splitting}{22}{subsection.4.2.7}%
-\contentsline {subsection}{\numberline {4.2.8}Hardware and Software Specifications}{22}{subsection.4.2.8}%
-\contentsline {section}{\numberline {4.3}Libraties and Frameworks}{22}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Transfer Learning}{23}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Fine Tuning}{24}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Model Architectures}{24}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}CNN Models}{24}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Vision Transformer (ViT)}{24}{subsection.4.6.2}%
-\contentsline {section}{\numberline {4.7}DeiT - Data-efficient Image Transformer}{27}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Mathematical Foundations of DeiT}{28}{section.4.8}%
-\contentsline {subsection}{\numberline {4.8.1}Image Patching and Embedding}{29}{subsection.4.8.1}%
-\contentsline {subsection}{\numberline {4.8.2}Patch and Position Embeddings}{29}{subsection.4.8.2}%
-\contentsline {subsection}{\numberline {4.8.3}Transformer Encoder}{29}{subsection.4.8.3}%
-\contentsline {subsection}{\numberline {4.8.4}Distillation Mechanisms}{30}{subsection.4.8.4}%
-\contentsline {subsubsection}{Hard Distillation Loss}{30}{subsubsection*.11}%
-\contentsline {subsubsection}{Soft Distillation Loss}{30}{subsubsection*.12}%
-\contentsline {subsection}{\numberline {4.8.5}Combined Training Objective}{30}{subsection.4.8.5}%
-\contentsline {subsection}{\numberline {4.8.6}Attention Mechanism}{30}{subsection.4.8.6}%
-\contentsline {subsection}{\numberline {4.8.7}Distillation Token Interaction}{31}{subsection.4.8.7}%
-\contentsline {subsection}{\numberline {4.8.8}Theoretical Analysis}{31}{subsection.4.8.8}%
-\contentsline {section}{\numberline {4.9}Evaluation Metrics}{31}{section.4.9}%
-\contentsline {subsection}{\numberline {4.9.1}Accuracy}{32}{subsection.4.9.1}%
-\contentsline {subsection}{\numberline {4.9.2}Precision}{32}{subsection.4.9.2}%
-\contentsline {subsection}{\numberline {4.9.3}Recall}{33}{subsection.4.9.3}%
-\contentsline {subsection}{\numberline {4.9.4}F1-Score}{33}{subsection.4.9.4}%
-\contentsline {subsection}{\numberline {4.9.5}Area Under the ROC Curve (AUC-ROC)}{34}{subsection.4.9.5}%
-\contentsline {section}{\numberline {4.10}t-SNE Visualization}{35}{section.4.10}%
-\contentsline {chapter}{\numberline {5}Results}{37}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Model Performance}{37}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Class-wise Performance Analysis}{39}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Comparison with Previous Methods}{41}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Discussion}{43}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Discussion}{43}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Implications of the Results}{44}{subsection.6.1.1}%
-\contentsline {section}{\numberline {6.2}Limitations}{44}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Conclusion}{45}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Future Work}{45}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Conclusions}{47}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Future Work and Recommendations}{48}{section.7.1}%
-\contentsline {chapter}{References}{51}{section.7.1}%
-\contentsline {chapter}{Appendices}{53}{appendix*.21}%
-\contentsline {chapter}{\numberline {}A - Github repository}{54}{appendix*.22}%
+\contentsline {section}{\numberline {1.2}Objectives}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Research Questions}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Significance of the Study}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Thesis Structure}{3}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Scope}{3}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Literature Review}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Photovoltaic Systems}{5}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Land-based Photovoltaic (PV) Systems}{5}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Floating Photovoltaic (FPV) Systems}{6}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Anomaly Types in Photovoltaic Systems}{6}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Thermal Anomalies}{7}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Physical Defects}{7}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Environmental Impact Anomalies}{7}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Electrical Anomalies}{8}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Floating PV-Specific Anomalies}{8}{subsection.2.2.5}%
+\contentsline {section}{\numberline {2.3}Power Loss Mechanisms in PV Systems}{8}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Anomaly Detection Methods}{8}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Visual Inspection}{9}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Infrared (IR) Thermography}{9}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Electroluminescence (EL) Imaging}{10}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Artificial Intelligence and Machine Learning}{10}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Machine Learning Fundamentals}{10}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Deep Learning}{11}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Computer Vision}{12}{subsection.2.5.3}%
+\contentsline {chapter}{\numberline {3}Theoretical Background}{13}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Methodology}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Overview of Dataset}{15}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Class Descriptions}{15}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Data Preprocessing and Augmentation}{17}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Image Preprocessing Techniques}{17}{subsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.1}Histogram Equalization}{17}{subsubsection.4.2.1.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.2}Image Resizing}{17}{subsubsection.4.2.1.2}%
+\contentsline {subsubsection}{\numberline {4.2.1.3}Data Normalization}{17}{subsubsection.4.2.1.3}%
+\contentsline {subsection}{\numberline {4.2.2}Data Augmentation Strategies}{17}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}Offline Data Augmentation}{18}{subsubsection.4.2.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2.2}Online Data Augmentation}{18}{subsubsection.4.2.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Data Splitting}{18}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Hardware and Software Infrastructure}{18}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Hardware Specifications}{18}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Libraries and Frameworks}{18}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}PyTorch}{18}{subsubsection.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {4.3.2.2}Pillow}{19}{subsubsection.4.3.2.2}%
+\contentsline {section}{\numberline {4.4}Deep Learning Approaches}{19}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Transfer Learning}{19}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Fine Tuning}{19}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Model Architectures}{20}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}CNN Models}{20}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Vision Transformer (ViT)}{20}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}ViT Architecture Components}{20}{subsubsection.4.5.2.1}%
+\contentsline {subsubsection}{\numberline {4.5.2.2}Mathematical Formulation}{21}{subsubsection.4.5.2.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.3}ViT Hyperparameters}{22}{subsubsection.4.5.2.3}%
+\contentsline {subsection}{\numberline {4.5.3}DeiT - Data-efficient Image Transformer}{22}{subsection.4.5.3}%
+\contentsline {subsubsection}{\numberline {4.5.3.1}Key Features of DeiT}{22}{subsubsection.4.5.3.1}%
+\contentsline {subsubsection}{\numberline {4.5.3.2}Mathematical Foundations of DeiT}{23}{subsubsection.4.5.3.2}%
+\contentsline {paragraph}{\numberline {4.5.3.2.1}Image Patching and Embedding}{23}{paragraph.4.5.3.2.1}%
+\contentsline {paragraph}{\numberline {4.5.3.2.2}Patch and Position Embeddings}{23}{paragraph.4.5.3.2.2}%
+\contentsline {paragraph}{\numberline {4.5.3.2.3}Transformer Encoder}{24}{paragraph.4.5.3.2.3}%
+\contentsline {paragraph}{\numberline {4.5.3.2.4}Distillation Mechanisms}{24}{paragraph.4.5.3.2.4}%
+\contentsline {paragraph}{\numberline {4.5.3.2.5}Combined Training Objective}{24}{paragraph.4.5.3.2.5}%
+\contentsline {paragraph}{\numberline {4.5.3.2.6}Attention Mechanism}{24}{paragraph.4.5.3.2.6}%
+\contentsline {paragraph}{\numberline {4.5.3.2.7}Distillation Token Interaction}{24}{paragraph.4.5.3.2.7}%
+\contentsline {subsubsection}{\numberline {4.5.3.3}Theoretical Analysis}{25}{subsubsection.4.5.3.3}%
+\contentsline {section}{\numberline {4.6}Evaluation Metrics}{25}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Accuracy}{25}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Precision}{25}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Recall}{26}{subsection.4.6.3}%
+\contentsline {subsection}{\numberline {4.6.4}F1-Score}{26}{subsection.4.6.4}%
+\contentsline {subsection}{\numberline {4.6.5}Area Under the ROC Curve (AUC-ROC)}{26}{subsection.4.6.5}%
+\contentsline {section}{\numberline {4.7}Visualization and Analysis Techniques}{27}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}t-SNE Visualization}{27}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Grad-CAM Visualization}{28}{subsection.4.7.2}%
+\contentsline {chapter}{\numberline {5}Results}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Model Performance}{29}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Class-wise Performance Analysis}{30}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Comparison with Previous Methods}{32}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Discussion}{33}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Discussion}{33}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Implications of the Results}{33}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Comparison with ViT and ResNet50}{34}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Limitations}{34}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Conclusion}{35}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Future Work}{35}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Dataset Enhancement and Diversification}{35}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Advanced Model Architectures}{35}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}Real-World Deployment and Edge Computing}{36}{subsection.6.4.3}%
+\contentsline {subsection}{\numberline {6.4.4}Multi-Modal Approaches}{36}{subsection.6.4.4}%
+\contentsline {subsection}{\numberline {6.4.5}Explainable AI and Interpretability}{36}{subsection.6.4.5}%
+\contentsline {chapter}{\numberline {7}Conclusions}{37}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Summary of Research}{37}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Key Findings}{37}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Model Performance}{37}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Feature Representation Analysis}{38}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Practical Implications}{38}{subsection.7.2.3}%
+\contentsline {section}{\numberline {7.3}Research Questions Addressed}{38}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Future Work and Recommendations}{39}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Model Architecture Enhancements}{39}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Data and Methodology Improvements}{39}{subsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.4.3}Real-World Implementation}{39}{subsection.7.4.3}%
+\contentsline {subsection}{\numberline {7.4.4}Longitudinal and Scalability Studies}{40}{subsection.7.4.4}%
+\contentsline {subsection}{\numberline {7.4.5}Domain-Specific Optimizations}{40}{subsection.7.4.5}%
+\contentsline {chapter}{\numberline {}References}{41}{subsection.7.4.5}%
+\contentsline {chapter}{\numberline {}Appendices}{43}{chapter*.20}%
+\contentsline {chapter}{\numberline {}A - Github repository}{44}{appendix*.21}%

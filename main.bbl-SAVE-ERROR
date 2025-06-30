@@ -198,6 +198,7 @@
       \strng{authornamehash}{1ee22eb79502d9a4e869ba5ae5f2430a}
       \strng{authorfullhash}{7282c4b61a86f2d4f5a9b649875167a3}
       \strng{authorfullhashraw}{7282c4b61a86f2d4f5a9b649875167a3}
+      \field{extraname}{1}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -298,6 +299,61 @@
       \verb https://arxiv.org/abs/2010.11929
       \endverb
     \endentry
+    \entry{touvron2021training}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=a2a13fcd633ec70c55a7f3f4812afdcf}{%
+           family={Touvron},
+           familyi={T\bibinitperiod},
+           given={Hugo},
+           giveni={H\bibinitperiod}}}%
+        {{hash=2cd60d757e4f4b8b7c6318fd2b1be3fe}{%
+           family={Cord},
+           familyi={C\bibinitperiod},
+           given={Matthieu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e9190eb3cfa416148f38314a0698d592}{%
+           family={Douze},
+           familyi={D\bibinitperiod},
+           given={Matthijs},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e5dfae4582081d649e3a0d5342050016}{%
+           family={Massa},
+           familyi={M\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=2b9ab922e693d9237ad952a8030eee9d}{%
+           family={Sablayrolles},
+           familyi={S\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e2e5e19639743f0a4040c64d5a623202}{%
+           family={Jegou},
+           familyi={J\bibinitperiod},
+           given={Herve},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{c237483431fea681283a37adbb23a59f}
+      \strng{fullhash}{2e662222c9e6cd11dffab1f4c161ae67}
+      \strng{fullhashraw}{2e662222c9e6cd11dffab1f4c161ae67}
+      \strng{bibnamehash}{2e662222c9e6cd11dffab1f4c161ae67}
+      \strng{authorbibnamehash}{2e662222c9e6cd11dffab1f4c161ae67}
+      \strng{authornamehash}{c237483431fea681283a37adbb23a59f}
+      \strng{authorfullhash}{2e662222c9e6cd11dffab1f4c161ae67}
+      \strng{authorfullhashraw}{2e662222c9e6cd11dffab1f4c161ae67}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Conference on Machine Learning (ICML)}
+      \field{title}{Training Data-Efficient Image Transformers \& Distillation through Attention}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2012.12877
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2012.12877
+      \endverb
+    \endentry
     \entry{he2016deep}{article}{}{}
       \name{author}{4}{}{%
         {{hash=6b4b60e909e78633945f3f9c9dc83e01}{%
@@ -329,8 +385,8 @@
       \strng{authornamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
       \strng{authorfullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
       \strng{authorfullhashraw}{42c4b52dc3a62cebabbc11c73e1afb53}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
@@ -342,6 +398,173 @@
       \verb{url}
       \verb https://arxiv.org/abs/1512.03385
       \endverb
+    \endentry
+    \entry{JEFFREYKUO2023116495}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=c7a13f4b036515d8488d7c0633f9ebee}{%
+           family={{Jeffrey Kuo}},
+           familyi={J\bibinitperiod},
+           given={Chung-Feng},
+           giveni={C\bibinithyphendelim F\bibinitperiod}}}%
+        {{hash=1613d6f9105d402ebbff74fe02a39524}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Sung-Hua},
+           giveni={S\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=9a8a7088d3b5642942ea2419a432993f}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Chao-Yang},
+           giveni={C\bibinithyphendelim Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{bd838e4ca9c801cf52ac445ea1ede42f}
+      \strng{fullhash}{4f897ddea3c65b60d3e6d61e027e8dec}
+      \strng{fullhashraw}{4f897ddea3c65b60d3e6d61e027e8dec}
+      \strng{bibnamehash}{4f897ddea3c65b60d3e6d61e027e8dec}
+      \strng{authorbibnamehash}{4f897ddea3c65b60d3e6d61e027e8dec}
+      \strng{authornamehash}{bd838e4ca9c801cf52ac445ea1ede42f}
+      \strng{authorfullhash}{4f897ddea3c65b60d3e6d61e027e8dec}
+      \strng{authorfullhashraw}{4f897ddea3c65b60d3e6d61e027e8dec}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0196-8904}
+      \field{journaltitle}{Energy Conversion and Management}
+      \field{title}{Automatic detection, classification and localization of defects in large photovoltaic plants using unmanned aerial vehicles (UAV) based infrared (IR) and RGB imaging}
+      \field{volume}{276}
+      \field{year}{2023}
+      \field{pages}{116495}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.enconman.2022.116495
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0196890422012730
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0196890422012730
+      \endverb
+      \keyw{Photovoltaic plants,Automatic detection,Thermal imager,Scale invariant feature transform,Random sample consensus}
+    \endentry
+    \entry{maghami2016power}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=680f3c0746d1e59522428e1cb6dd6f27}{%
+           family={Maghami},
+           familyi={M\bibinitperiod},
+           given={M.\bibnamedelimi R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=2e09b6b4cad2036d62b1336828052271}{%
+           family={Hizam},
+           familyi={H\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=fddc3924dbf15f5022b20286b4386767}{%
+           family={Gomes},
+           familyi={G\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d9c74e1d16e93681f4fcb643f71e949a}{%
+           family={Radzi},
+           familyi={R\bibinitperiod},
+           given={M.\bibnamedelimi A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=1204ec85e345000e028dc61559fd2722}{%
+           family={Rezadad},
+           familyi={R\bibinitperiod},
+           given={M.\bibnamedelimi I.},
+           giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=d9ccf6cad2c6d989790bd8d4e0c9efd5}{%
+           family={Hajighorbani},
+           familyi={H\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{8e76d65585054718a25fa4efd4aa7121}
+      \strng{fullhash}{87896c2bc9d454304603f4e4a7c06e58}
+      \strng{fullhashraw}{87896c2bc9d454304603f4e4a7c06e58}
+      \strng{bibnamehash}{87896c2bc9d454304603f4e4a7c06e58}
+      \strng{authorbibnamehash}{87896c2bc9d454304603f4e4a7c06e58}
+      \strng{authornamehash}{8e76d65585054718a25fa4efd4aa7121}
+      \strng{authorfullhash}{87896c2bc9d454304603f4e4a7c06e58}
+      \strng{authorfullhashraw}{87896c2bc9d454304603f4e4a7c06e58}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Renewable and Sustainable Energy Reviews}
+      \field{title}{Power loss due to soiling on solar panel: A review}
+      \field{volume}{59}
+      \field{year}{2016}
+      \field{pages}{1307\bibrangedash 1316}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.rser.2016.01.044
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/j.rser.2016.01.044
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/j.rser.2016.01.044
+      \endverb
+    \endentry
+    \entry{FonsecaAlves2021AutomaticNetworks}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=7a3773ba386bdff2e9d53f24ef9245d8}{%
+           family={Fonseca\bibnamedelima Alves},
+           familyi={F\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Ricardo\bibnamedelima Henrique},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=1125b9a77a755f7861df2f07161ba491}{%
+           family={Deus\bibnamedelima Júnior},
+           familyi={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Getúlio\bibnamedelimb Antero\bibnamedelima de},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{hash=73b460664032223f5933519f89330947}{%
+           family={Marra},
+           familyi={M\bibinitperiod},
+           given={Enes\bibnamedelima Gonçalves},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=2a40832bb9d42fa6ca3363d33c89cea2}{%
+           family={Lemos},
+           familyi={L\bibinitperiod},
+           given={Rodrigo\bibnamedelima Pinto},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pergamon}%
+      }
+      \strng{namehash}{723b8d304367485559b8694a597ade13}
+      \strng{fullhash}{7706e36bd9ba3d61c19b4acc13d3b69a}
+      \strng{fullhashraw}{7706e36bd9ba3d61c19b4acc13d3b69a}
+      \strng{bibnamehash}{7706e36bd9ba3d61c19b4acc13d3b69a}
+      \strng{authorbibnamehash}{7706e36bd9ba3d61c19b4acc13d3b69a}
+      \strng{authornamehash}{723b8d304367485559b8694a597ade13}
+      \strng{authorfullhash}{7706e36bd9ba3d61c19b4acc13d3b69a}
+      \strng{authorfullhashraw}{7706e36bd9ba3d61c19b4acc13d3b69a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0960-1481}
+      \field{journaltitle}{Renewable Energy}
+      \field{month}{12}
+      \field{title}{{Automatic fault classification in photovoltaic modules using Convolutional Neural Networks}}
+      \field{volume}{179}
+      \field{year}{2021}
+      \field{pages}{502\bibrangedash 516}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/J.RENENE.2021.07.070
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0960148121010752?via%3Dihub
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0960148121010752?via%3Dihub
+      \endverb
+      \keyw{Convolutional neural network,Data augmentation,Fault classification,Solar energy,Thermography}
     \endentry
   \enddatalist
 \endrefsection

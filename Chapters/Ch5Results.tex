@@ -176,7 +176,7 @@ showing the performance metrics across different classification scenarios.
   \caption{Comparison of CNN and Vision Transformer with previous models for the
   same dataset.}
   \label{tab:model_comparison}
-  \begin{tabular}{p{3cm}ccccr}
+  \begin{tabular}{l@{\hspace{0.5cm}}ccccr}
     \toprule \textbf{Model/Ref.}  & \textbf{No. of}  & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} \\
                                   & \textbf{Classes} & \textbf{\%}       & \textbf{\%}        & \textbf{\%}     &                   \\
     \midrule CNN                  & 2                & 92.50             & 92.00              & 92.00           & 92.00             \\
@@ -188,9 +188,8 @@ showing the performance metrics across different classification scenarios.
     {[}21{]}                      & 11               & 93.51             & 93.52              & 93.51           & 93.49             \\
     \midrule CNN-Edge devices     & 12               & 85.40             & ---                & ---             & ---               \\
     {[}25{]}                      &                  &                   &                    &                 &                   \\
-    \midrule K-means \& Inception & 8                & 89.00             & 72.00              & 70.00           & 69.00             \\
-    \& Residual                   &                  &                   &                    &                 &                   \\
-    {[}27{]}                      &                  &                   &                    &                 &                   \\
+    \midrule K-means \&~          & 8                & 89.00             & 72.00              & 70.00           & 69.00             \\
+    Inception \& Residual~{[}27{]} &                  &                   &                    &                 &                   \\
     \midrule EfficientDet \& NCA  & 12               & 93.93             & 91.50              & 88.28           & 89.82             \\
     SVM {[}10{]}                  &                  &                   &                    &                 &                   \\
     \bottomrule

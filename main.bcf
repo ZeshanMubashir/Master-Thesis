@@ -2381,8 +2381,25 @@
     <bcf:citekey order="6" intorder="1">vaswani2017attention</bcf:citekey>
     <bcf:citekey order="7" intorder="1">dosovitskiy2020image</bcf:citekey>
     <bcf:citekey order="8" intorder="1">ibrahim2022machine</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">he2016deep</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">deline2010partially</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">dosovitskiy2020image</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">touvron2021training</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">he2016deep</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">touvron2021training</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">JEFFREYKUO2023116495</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">maghami2016power</bcf:citekey>
+    <bcf:citekey order="14" intorder="2">deline2010partially</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">FonsecaAlves2021AutomaticNetworks</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">ibrahim2022machine</bcf:citekey>
+    <bcf:citekey order="16" intorder="2">FonsecaAlves2021AutomaticNetworks</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">touvron2021training</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">dosovitskiy2020image</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">he2016deep</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">FonsecaAlves2021AutomaticNetworks</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">FonsecaAlves2021AutomaticNetworks</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">dosovitskiy2020image</bcf:citekey>
+    <bcf:citekey order="22" intorder="2">touvron2021training</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">FonsecaAlves2021AutomaticNetworks</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">JEFFREYKUO2023116495</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
