@@ -23,21 +23,106 @@
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
+*.nav
+*.snm
+*.vrb
+*.tdo
+*.tuc
+*.ptc
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+*.idx
+*.ind
+*.ilg
+*.inx
+*.pdf.tmp
+*.pdf.lock
+*.pdf~
+*.pdf.backup
 
 # Bibliography artifacts
 *.bbl-SAVE-ERROR
+*.bak
+*.bib~
+*.bib.backup
 
 # Editor specific
 .vscode/
 *.swp
 *~
+*.tmp
+*.temp
+*.backup
+*.bkp
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+*.idea/
+*.project
+*.classpath
+*.settings/
+
+# TeXstudio specific
+*.txss
+*.txs*
+*.txss~
+
+# Overleaf specific
+*.overleaf*
 
 # OS specific
 .DS_Store
 Thumbs.db
+desktop.ini
+ehthumbs.db
+._*
+.Spotlight-V100
+.Trashes
+
+# Build directories
+build/
+dist/
+_output/
+latex-build/
+tmp/
+temp/
+cache/
+__pycache__/
 
 # Automation scripts logs
 *.log
 
-# Keep the main PDF (comment this line if you don't want to track the PDF)
-# main.pdf 
+# PDF handling - keep main PDFs tracked (uncomment lines below if you want to exclude them)
+# main.pdf
+# main_updated.pdf
+
+# Additional common patterns
+*~
+.#*
+*.part
+*.tmp
+*.bak
+*.old
+*.orig
+*.rej
+*.diff
+*.patch
+
+# Academic tool artifacts
+*.zotero*
+*.mendeley*
+*.endnote*
+*.biblatex*
+*.citeproc*
+
+# Temporary files from compilation
+*.auxlock
+*.pdfsync
+*.xdv
+*.pdfcrop
+*.pdfcrop.log
