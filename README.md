@@ -24,7 +24,7 @@ The research evaluates both traditional **CNNs** (ResNet50, VGG16, EfficientNet-
 ### Thermal Anomaly Detection
 
 Below is an example of the thermal signatures used to identify defects in solar modules:
-![Thermal Anomaly](Figures/Solar%20PV/Original%20Dataset/image25_inferno.png)
+<img src="Figures/Solar%20PV/Original%20Dataset/image25_inferno.png" alt="Thermal Anomaly" width="400">
 
 ### Model Performance
 
