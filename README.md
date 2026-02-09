@@ -1,9 +1,5 @@
 # Autonomous Monitoring and Classification of Solar PVs Anomalies using Deep Learning Methods
 
-<p align="center">
-  <img src="Figures/NTNU Main Logo.png" alt="NTNU Logo" width="300">
-</p>
-
 ## Overview
 
 This repository contains the Master's thesis project focused on the **Autonomous Monitoring and Classification of Solar PVs Anomalies using Deep Learning Methods**. The research aim is to develop and evaluate intelligent computer vision systems for the automated inspection of photovoltaic installations using thermal imaging.
