@@ -53,3 +53,14 @@ Evaluation of the 12-class classification model (11 anomaly types + normal):
 
 ---
 *This project was completed as part of the Master's program in Simulation and Visualization at NTNU.*
+
+## Reusable Notebook Package (`src/pv_anomaly/`)
+
+The shared notebook pipeline code is organized into a reusable package:
+
+- `src/pv_anomaly/data.py` — dataset transforms, splitting, and dataloader creation
+- `src/pv_anomaly/models.py` — model definitions (including ViT classifier setup)
+- `src/pv_anomaly/train.py` — loss function, epoch helpers, and training loop
+- `src/pv_anomaly/eval.py` — test-set evaluation helpers
+- `src/pv_anomaly/utils.py` — common utilities (seed and device helpers)
+
