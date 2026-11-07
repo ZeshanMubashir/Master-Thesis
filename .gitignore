@@ -93,6 +93,7 @@ tmp/
 temp/
 cache/
 __pycache__/
+mlruns/
 
 # Automation scripts logs
 *.log

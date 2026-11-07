@@ -60,6 +60,18 @@ To start notebooks:
 python -m uv run jupyter notebook
 ```
 
+### MLflow local experiment tracking
+
+MLflow tracking is configured to use a local file store in `./mlruns`.
+
+Run one of the training notebooks that includes tracking (for example, `/home/runner/work/Master-Thesis/Master-Thesis/src/2-Class/ConvNext_2Class_Classification_Pytorch.ipynb`), then start the UI:
+
+```bash
+python -m uv run mlflow ui --backend-store-uri ./mlruns
+```
+
+Open `http://127.0.0.1:5000` and use the MLflow "Compare runs" view to compare parameters, metrics, and artifacts across runs.
+
 ## Results Summary
 
 - **High Accuracy:** >98% for anomaly detection.
