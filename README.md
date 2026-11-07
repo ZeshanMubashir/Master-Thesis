@@ -45,6 +45,21 @@ Evaluation of the 12-class classification model (11 anomaly types + normal):
 - **Explainability:** Implementation of Grad-CAM and t-SNE for visualizing model decision-making.
 - **Dataset:** Utilization of the large-scale InfraredSolarModules dataset.
 
+## Environment setup
+
+Use Python 3.10 or newer.
+
+```bash
+python -m pip install --user uv
+python -m uv sync
+```
+
+To start notebooks:
+
+```bash
+python -m uv run jupyter notebook
+```
+
 ## Results Summary
 
 - **High Accuracy:** >98% for anomaly detection.
